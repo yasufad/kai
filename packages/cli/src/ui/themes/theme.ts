@@ -82,40 +82,40 @@ export interface CustomTheme {
 
 export const lightTheme: ColorsTheme = {
   type: 'light',
-  Background: '#FAFAFA',
-  Foreground: '#383A42',
-  LightBlue: '#89BDCD',
-  AccentBlue: '#3B82F6',
-  AccentPurple: '#8B5CF6',
-  AccentCyan: '#06B6D4',
-  AccentGreen: '#3CA84B',
-  AccentYellow: '#D5A40A',
-  AccentRed: '#DD4C4C',
-  DiffAdded: '#C6EAD8',
-  DiffRemoved: '#FFCCCC',
-  Comment: '#008000',
-  Gray: '#97a0b0',
+  Background: '#06060A', // MUI background.default
+  Foreground: '#F7F7F8', // MUI text.primary
+  LightBlue: '#A5F3FC', // MUI primary.light
+  AccentBlue: '#22D3EE', // MUI primary.main
+  AccentPurple: '#155E75', // MUI secondary.main
+  AccentCyan: '#0891B2', // MUI primary.dark
+  AccentGreen: '#22C55E', // MUI success.main
+  AccentYellow: '#F59E0B', // MUI warning.main
+  AccentRed: '#EF4444', // MUI error.main
+  DiffAdded: '#22C55E', // Using success color for added items
+  DiffRemoved: '#EF4444', // Using error color for removed items
+  Comment: '#9AA0A6', // MUI text.secondary
+  Gray: '#6C727C', // MUI text.disabled
+  GradientColors: ['#22D3EE', '#22D3EE'], // Using primary and warning for gradient
   DarkGray: interpolateColor('#97a0b0', '#FAFAFA', 0.5),
-  GradientColors: ['#4796E4', '#847ACE', '#C3677F'],
 };
 
 export const darkTheme: ColorsTheme = {
   type: 'dark',
-  Background: '#1E1E2E',
-  Foreground: '#CDD6F4',
-  LightBlue: '#ADD8E6',
-  AccentBlue: '#89B4FA',
-  AccentPurple: '#CBA6F7',
-  AccentCyan: '#89DCEB',
-  AccentGreen: '#A6E3A1',
-  AccentYellow: '#F9E2AF',
-  AccentRed: '#F38BA8',
-  DiffAdded: '#28350B',
-  DiffRemoved: '#430000',
-  Comment: '#6C7086',
-  Gray: '#6C7086',
+  Background: '#06060A',
+  Foreground: '#F7F7F8',
+  LightBlue: '#A5F3FC',
+  AccentBlue: '#22D3EE',
+  AccentPurple: '#155E75',
+  AccentCyan: '#0891B2',
+  AccentGreen: '#22C55E',
+  AccentYellow: '#F59E0B',
+  AccentRed: '#EF4444',
+  DiffAdded: '#22C55E',
+  DiffRemoved: '#EF4444',
+  Comment: '#9AA0A6',
+  Gray: '#6C727C',
+  GradientColors: ['#22D3EE', '#22D3EE'],
   DarkGray: interpolateColor('#6C7086', '#1E1E2E', 0.5),
-  GradientColors: ['#4796E4', '#847ACE', '#C3677F'],
 };
 
 export const ansiTheme: ColorsTheme = {

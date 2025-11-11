@@ -1,6 +1,6 @@
-# Gemini CLI Keyboard Shortcuts
+# Kai Keyboard Shortcuts
 
-This document lists the available keyboard shortcuts within Gemini CLI.
+This document lists the available keyboard shortcuts within Kai.
 
 ## General
 

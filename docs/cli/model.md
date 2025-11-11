@@ -1,12 +1,11 @@
-# Gemini CLI Model Selection (`/model` Command)
+# Kai Model Selection (`/model` Command)
 
-Select your Gemini CLI model. The `/model` command opens a dialog where you can
-configure the model used by Gemini CLI, giving you more control over your
-results.
+Select your Kai model. The `/model` command opens a dialog where you can
+configure the model used by Kai, giving you more control over your results.
 
 ## How to use the `/model` command
 
-Use the following command in Gemini CLI:
+Use the following command in Kai:
 
 ```
 /model
@@ -24,7 +23,7 @@ Running this command will open a dialog with your model options:
   model is typically the fastest.
 
 Changes to these settings will be applied to all subsequent interactions with
-Gemini CLI.
+Kai.
 
 ## Best practices for model selection
 

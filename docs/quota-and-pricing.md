@@ -1,9 +1,9 @@
-# Gemini CLI: Quotas and Pricing
+# Kai: Quotas and Pricing
 
-Gemini CLI offers a generous free tier that covers the use cases for many
-individual developers. For enterprise / professional usage, or if you need
-higher limits, there are multiple possible avenues depending on what type of
-account you use to authenticate.
+Kai offers a generous free tier that covers the use cases for many individual
+developers. For enterprise / professional usage, or if you need higher limits,
+there are multiple possible avenues depending on what type of account you use to
+authenticate.
 
 See [privacy and terms](./tos-privacy.md) for details on Privacy policy and
 Terms of Service.
@@ -39,7 +39,7 @@ Assist for individuals. This includes:
 - 1000 model requests / user / day
 - 60 model requests / user / minute
 - Model requests will be made across the Gemini model family as determined by
-  Gemini CLI.
+  Kai.
 
 Learn more at
 [Gemini Code Assist for Individuals Limits](https://developers.google.com/gemini-code-assist/resources/quotas#quotas-for-agent-mode-gemini-cli).
@@ -70,7 +70,7 @@ Learn more at
 ## Paid tier: Higher limits for a fixed cost
 
 If you use up your initial number of requests, you can continue to benefit from
-Gemini CLI by upgrading to one of the following subscriptions:
+Kai by upgrading to one of the following subscriptions:
 
 - [Google AI Pro and AI Ultra](https://cloud.google.com/products/gemini/pricing)
   by signing up at
@@ -97,7 +97,7 @@ Gemini CLI by upgrading to one of the following subscriptions:
     - 2000 model requests / user / day
     - 120 model requests / user / minute
   - Model requests will be made across the Gemini model family as determined by
-    Gemini CLI.
+    Kai.
 
   [Learn more about Gemini Code Assist Standard and Enterprise license limits](https://developers.google.com/gemini-code-assist/resources/quotas#quotas-for-agent-mode-gemini-cli).
 
@@ -136,8 +136,7 @@ only way to ensure your workflow isn't interrupted by quota limits.
 These plans currently apply only to the use of Gemini web-based products
 provided by Google-based experiences (for example, the Gemini web app or the
 Flow video editor). These plans do not apply to the API usage which powers the
-Gemini CLI. Supporting these plans is under active consideration for future
-support.
+Kai. Supporting these plans is under active consideration for future support.
 
 ## Tips to Avoid High Costs
 

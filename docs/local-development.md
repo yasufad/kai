@@ -13,7 +13,7 @@ Dev traces are verbose and are specifically meant for understanding agent
 behaviour and debugging issues. They are disabled by default.
 
 To enable dev traces, set the `GEMINI_DEV_TRACING=true` environment variable
-when running Gemini CLI.
+when running Kai.
 
 ### Viewing Dev Traces
 
@@ -37,10 +37,10 @@ Genkit provides a web-based UI for viewing traces and other telemetry data.
     Genkit Developer UI: http://localhost:4000
     ```
 
-2.  **Run Gemini CLI with Dev Tracing:**
+2.  **Run Kai with Dev Tracing:**
 
-    In a separate terminal, run your Gemini CLI command with the
-    `GEMINI_DEV_TRACING` environment variable:
+    In a separate terminal, run your Kai command with the `GEMINI_DEV_TRACING`
+    environment variable:
 
     ```bash
     GEMINI_DEV_TRACING=true gemini
@@ -67,10 +67,10 @@ You can view dev traces in the Jaeger UI. To get started, follow these steps:
     This command also configures your workspace for local telemetry and provides
     a link to the Jaeger UI (usually `http://localhost:16686`).
 
-2.  **Run Gemini CLI with dev tracing:**
+2.  **Run Kai with dev tracing:**
 
-    In a separate terminal, run your Gemini CLI command with the
-    `GEMINI_DEV_TRACING` environment variable:
+    In a separate terminal, run your Kai command with the `GEMINI_DEV_TRACING`
+    environment variable:
 
     ```bash
     GEMINI_DEV_TRACING=true gemini

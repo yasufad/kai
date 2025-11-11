@@ -37,18 +37,17 @@ topics on:
   - **Solution:** Either stop the other process that is using the port or
     configure the MCP server to use a different port.
 
-- **Error: Command not found (when attempting to run Gemini CLI with
-  `gemini`).**
-  - **Cause:** Gemini CLI is not correctly installed or it is not in your
-    system's `PATH`.
-  - **Solution:** The update depends on how you installed Gemini CLI:
+- **Error: Command not found (when attempting to run Kai with `gemini`).**
+  - **Cause:** Kai is not correctly installed or it is not in your system's
+    `PATH`.
+  - **Solution:** The update depends on how you installed Kai:
     - If you installed `gemini` globally, check that your `npm` global binary
-      directory is in your `PATH`. You can update Gemini CLI using the command
+      directory is in your `PATH`. You can update Kai using the command
       `npm install -g @google/gemini-cli@latest`.
     - If you are running `gemini` from source, ensure you are using the correct
       command to invoke it (e.g., `node packages/cli/dist/index.js ...`). To
-      update Gemini CLI, pull the latest changes from the repository, and then
-      rebuild using the command `npm run build`.
+      update Kai, pull the latest changes from the repository, and then rebuild
+      using the command `npm run build`.
 
 - **Error: `MODULE_NOT_FOUND` or import errors.**
   - **Cause:** Dependencies are not installed correctly, or the project hasn't
@@ -59,24 +58,23 @@ topics on:
     3.  Verify that the build completed successfully with `npm run start`.
 
 - **Error: "Operation not permitted", "Permission denied", or similar.**
-  - **Cause:** When sandboxing is enabled, Gemini CLI may attempt operations
-    that are restricted by your sandbox configuration, such as writing outside
-    the project directory or system temp directory.
+  - **Cause:** When sandboxing is enabled, Kai may attempt operations that are
+    restricted by your sandbox configuration, such as writing outside the
+    project directory or system temp directory.
   - **Solution:** Refer to the [Configuration: Sandboxing](./cli/sandbox.md)
     documentation for more information, including how to customize your sandbox
     configuration.
 
-- **Gemini CLI is not running in interactive mode in "CI" environments**
-  - **Issue:** The Gemini CLI does not enter interactive mode (no prompt
-    appears) if an environment variable starting with `CI_` (e.g., `CI_TOKEN`)
-    is set. This is because the `is-in-ci` package, used by the underlying UI
-    framework, detects these variables and assumes a non-interactive CI
-    environment.
+- **Kai is not running in interactive mode in "CI" environments**
+  - **Issue:** The Kai does not enter interactive mode (no prompt appears) if an
+    environment variable starting with `CI_` (e.g., `CI_TOKEN`) is set. This is
+    because the `is-in-ci` package, used by the underlying UI framework, detects
+    these variables and assumes a non-interactive CI environment.
   - **Cause:** The `is-in-ci` package checks for the presence of `CI`,
     `CONTINUOUS_INTEGRATION`, or any environment variable with a `CI_` prefix.
     When any of these are found, it signals that the environment is
-    non-interactive, which prevents the Gemini CLI from starting in its
-    interactive mode.
+    non-interactive, which prevents the Kai from starting in its interactive
+    mode.
   - **Solution:** If the `CI_` prefixed variable is not needed for the CLI to
     function, you can temporarily unset it for the command. e.g.,
     `env -u CI_TOKEN gemini`
@@ -92,8 +90,8 @@ topics on:
 
 ## Exit Codes
 
-The Gemini CLI uses specific exit codes to indicate the reason for termination.
-This is especially useful for scripting and automation.
+The Kai uses specific exit codes to indicate the reason for termination. This is
+especially useful for scripting and automation.
 
 | Exit Code | Error Type                 | Description                                                                                         |
 | --------- | -------------------------- | --------------------------------------------------------------------------------------------------- |
@@ -132,7 +130,7 @@ This is especially useful for scripting and automation.
 ## Existing GitHub Issues similar to yours or creating new Issues
 
 If you encounter an issue that was not covered here in this _Troubleshooting
-guide_, consider searching the Gemini CLI
+guide_, consider searching the Kai
 [Issue tracker on GitHub](https://github.com/google-gemini/gemini-cli/issues).
 If you can't find an issue similar to yours, consider creating a new GitHub
 Issue with a detailed description. Pull requests are also welcome!

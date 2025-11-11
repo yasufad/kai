@@ -210,7 +210,7 @@ describe('AuthDialog', () => {
 
       expect(mockedRunExitCleanup).toHaveBeenCalled();
       expect(logSpy).toHaveBeenCalledWith(
-        expect.stringContaining('Please restart Gemini CLI'),
+        expect.stringContaining('Please restart Kai'),
       );
       expect(exitSpy).toHaveBeenCalledWith(0);
 

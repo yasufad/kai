@@ -1,7 +1,7 @@
-# Gemini CLI Authentication Setup
+# Kai Authentication Setup
 
-Gemini CLI requires authentication using Google's services. Before using Gemini
-CLI, configure **one** of the following authentication methods:
+Kai requires authentication using Google's services. Before using Gemini CLI,
+configure **one** of the following authentication methods:
 
 - Interactive mode:
   - Recommended: Login with Google
@@ -12,13 +12,13 @@ CLI, configure **one** of the following authentication methods:
 
 ## Quick Check: Running in Google Cloud Shell?
 
-If you are running the Gemini CLI within a Google Cloud Shell environment,
+If you are running the Kai within a Google Cloud Shell environment,
 authentication is typically automatic using your Cloud Shell credentials.
 
 ## Authenticate in Interactive mode
 
-When you run Gemini CLI through the command-line, Gemini CLI will provide the
-following options:
+When you run Kai through the command-line, Kai will provide the following
+options:
 
 ```bash
 > 1. Login with Google
@@ -31,14 +31,14 @@ options.
 
 ### Recommended: Login with Google
 
-If you are running Gemini CLI on your local machine, the simplest method is
-logging in with your Google account.
+If you are running Kai on your local machine, the simplest method is logging in
+with your Google account.
 
 > **Important:** Use this method if you are a **Google AI Pro** or **Google AI
 > Ultra** subscriber.
 
-1. Select **Login with Google**. Gemini CLI will open a login prompt using your
-   web browser.
+1. Select **Login with Google**. Kai will open a login prompt using your web
+   browser.
 
    If you are a **Google AI Pro** or **Google AI Ultra** subscriber, login with
    the Google account associated with your subscription.
@@ -228,9 +228,9 @@ To avoid setting environment variables in every terminal session, you can:
     > shell can potentially read them.
 
 2.  **Use a `.env` file:** Create a `.gemini/.env` file in your project
-    directory or home directory. Gemini CLI automatically loads variables from
-    the first `.env` file it finds, searching up from the current directory,
-    then in `~/.gemini/.env` or `~/.env`. `.gemini/.env` is recommended.
+    directory or home directory. Kai automatically loads variables from the
+    first `.env` file it finds, searching up from the current directory, then in
+    `~/.gemini/.env` or `~/.env`. `.gemini/.env` is recommended.
 
     Example for user-wide settings:
 
@@ -269,5 +269,5 @@ environment variables are found.
 Your authentication method affects your quotas, pricing, Terms of Service, and
 privacy notices. Review the following pages to learn more:
 
-- [Gemini CLI: Quotas and Pricing](../quota-and-pricing.md).
-- [Gemini CLI: Terms of Service and Privacy Notice](../tos-privacy.md).
+- [Kai: Quotas and Pricing](../quota-and-pricing.md).
+- [Kai: Terms of Service and Privacy Notice](../tos-privacy.md).

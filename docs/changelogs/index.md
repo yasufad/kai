@@ -1,11 +1,11 @@
-# Gemini CLI Changelog
+# Kai Changelog
 
-Wondering what's new in Gemini CLI? This document provides key highlights and
-notable changes to Gemini CLI.
+Wondering what's new in Kai? This document provides key highlights and notable
+changes to Kai.
 
-## v0.12.0 - Gemini CLI weekly update - 2025-10-27
+## v0.12.0 - Kai weekly update - 2025-10-27
 
-![Codebase investigator subagent in Gemini CLI.](https://i.imgur.com/4J1njsx.png)
+![Codebase investigator subagent in Kai.](https://i.imgur.com/4J1njsx.png)
 
 - **🎉 New partner extensions:**
   - **🤗 Hugging Face extension:** Access the Hugging Face hub.
@@ -29,8 +29,8 @@ notable changes to Gemini CLI.
   ([pic](https://imgur.com/a/ABFcWWw),
   [pr](https://github.com/google-gemini/gemini-cli/pull/8940) by
   [@abhipatel12](https://github.com/abhipatel12)).
-- **Model routing:** Gemini CLI will now intelligently pick the best model for
-  the task. Simple queries will be sent to Flash while complex analytical or
+- **Model routing:** Kai will now intelligently pick the best model for the
+  task. Simple queries will be sent to Flash while complex analytical or
   creative tasks will still use the power of Pro. This ensures your quota will
   last for a longer period of time. You can always opt-out of this via `/model`.
   ([pr](https://github.com/google-gemini/gemini-cli/pull/9262) by
@@ -66,12 +66,12 @@ notable changes to Gemini CLI.
   ([pr](https://github.com/google-gemini/gemini-cli/pull/11593) by
   [@joshualitt](https://github.com/joshualitt)).
 
-## v0.11.0 - Gemini CLI weekly update - 2025-10-20
+## v0.11.0 - Kai weekly update - 2025-10-20
 
-![Gemini CLI and Jules](https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Jules_Extension_-_Blog_Header_O346JNt.original.png)
+![Kai and Jules](https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Jules_Extension_-_Blog_Header_O346JNt.original.png)
 
-- 🎉 **Gemini CLI Jules Extension:** Use Gemini CLI to orchestrate Jules. Spawn
-  remote workers, delegate tedious tasks, or check in on running jobs!
+- 🎉 **Kai Jules Extension:** Use Kai to orchestrate Jules. Spawn remote
+  workers, delegate tedious tasks, or check in on running jobs!
   - Install:
     `gemini extensions install https://github.com/gemini-cli-extensions/jules`
   - Announcement:
@@ -100,8 +100,8 @@ notable changes to Gemini CLI.
   ([pr](https://github.com/google-gemini/gemini-cli/pull/10194) by
   [@capachino](https://github.com/capachino))
 - **Removal of deprecated flags:** We’ve finally removed a number of deprecated
-  flags to cleanup Gemini CLI’s invocation profile:
-  - `--all-files` / `-a` in favor of `@` from within Gemini CLI.
+  flags to cleanup Kai’s invocation profile:
+  - `--all-files` / `-a` in favor of `@` from within Kai.
     ([pr](https://github.com/google-gemini/gemini-cli/pull/11228) by
     [@allenhutchison](https://github.com/allenhutchison))
   - `--telemetry-*` flags in favor of
@@ -109,13 +109,12 @@ notable changes to Gemini CLI.
     ([pr](https://github.com/google-gemini/gemini-cli/pull/11318) by
     [@allenhutchison](https://github.com/allenhutchison))
 
-## v0.10.0 - Gemini CLI weekly update - 2025-10-13
+## v0.10.0 - Kai weekly update - 2025-10-13
 
 - **Polish:** The team has been heads down bug fixing and investing heavily into
   polishing existing flows, tools, and interactions.
-- **Interactive Shell Tool calling:** Gemini CLI can now also execute
-  interactive tools if needed
-  ([pr](https://github.com/google-gemini/gemini-cli/pull/11225) by
+- **Interactive Shell Tool calling:** Kai can now also execute interactive tools
+  if needed ([pr](https://github.com/google-gemini/gemini-cli/pull/11225) by
   [@galz10](https://github.com/galz10)).
 - **Alt+Key support:** Enables broader support for Alt+Key keyboard shortcuts
   across different terminals.
@@ -126,10 +125,10 @@ notable changes to Gemini CLI.
   ([pr](https://github.com/google-gemini/gemini-cli/pull/10819) by
   [@jerop](https://github.com/jerop)).
 
-## v0.9.0 - Gemini CLI weekly update - 2025-10-06
+## v0.9.0 - Kai weekly update - 2025-10-06
 
 - 🎉 **Interactive Shell:** Run interactive commands like `vim`, `rebase -i`, or
-  even `gemini` 😎 directly in Gemini CLI:
+  even `gemini` 😎 directly in Kai:
   - Blog:
     [https://developers.googleblog.com/en/say-hello-to-a-new-level-of-interactivity-in-gemini-cli/](https://developers.googleblog.com/en/say-hello-to-a-new-level-of-interactivity-in-gemini-cli/)
 - **Install pre-release extensions:** Install the latest `--pre-release`
@@ -151,11 +150,11 @@ notable changes to Gemini CLI.
   ([pr](https://github.com/google-gemini/gemini-cli/pull/10108) by
   [@sgnagnarella](https://github.com/sgnagnarella))
 
-## v0.8.0 - Gemini CLI weekly update - 2025-09-29
+## v0.8.0 - Kai weekly update - 2025-09-29
 
-- 🎉 **Announcing Gemini CLI Extensions** 🎉
-  - Completely customize your Gemini CLI experience to fit your workflow.
-  - Build and share your own Gemini CLI extensions with the world.
+- 🎉 **Announcing Kai Extensions** 🎉
+  - Completely customize your Kai experience to fit your workflow.
+  - Build and share your own Kai extensions with the world.
   - Launching with a growing catalog of community, partner, and Google-built
     extensions.
     - Check extensions from
@@ -168,7 +167,7 @@ notable changes to Gemini CLI.
     - `gemini extensions list|update|new`
   - Or use commands while running with `/extensions list|update`.
   - Everything you need to know:
-    [Now open for building: Introducing Gemini CLI extensions](https://blog.google/technology/developers/gemini-cli-extensions/).
+    [Now open for building: Introducing Kai extensions](https://blog.google/technology/developers/gemini-cli-extensions/).
 - 🎉 **Our New Home Page & Better Documentation** 🎉
   - Check out our new home page for better getting started material, reference
     documentation, extensions and more!
@@ -190,18 +189,18 @@ notable changes to Gemini CLI.
   changes, smaller features, UI updates, reliability and bug fixes + general
   polish made it in this week!
 
-## v0.7.0 - Gemini CLI weekly update - 2025-09-22
+## v0.7.0 - Kai weekly update - 2025-09-22
 
-- 🎉**Build your own Gemini CLI IDE plugin:** We've published a spec for
-  creating IDE plugins to enable rich context-aware experiences and native
-  in-editor diffing in your IDE of choice.
+- 🎉**Build your own Kai IDE plugin:** We've published a spec for creating IDE
+  plugins to enable rich context-aware experiences and native in-editor diffing
+  in your IDE of choice.
   ([pr](https://github.com/google-gemini/gemini-cli/pull/8479) by
   [@skeshive](https://github.com/skeshive))
-- 🎉 **Gemini CLI extensions**
+- 🎉 **Kai extensions**
   - **Flutter:** An early version to help you create, build, test, and run
-    Flutter apps with Gemini CLI
+    Flutter apps with Kai
     ([extension](https://github.com/gemini-cli-extensions/flutter))
-  - **nanobanana:** Integrate nanobanana into Gemini CLI
+  - **nanobanana:** Integrate nanobanana into Kai
     ([extension](https://github.com/gemini-cli-extensions/nanobanana))
 - **Telemetry config via environment:** Manage telemetry settings using
   environment variables for a more flexible setup.
@@ -228,15 +227,15 @@ notable changes to Gemini CLI.
   changes, smaller features, UI updates, reliability and bug fixes + general
   polish made it in this week!
 
-## v0.6.0 - Gemini CLI weekly update - 2025-09-15
+## v0.6.0 - Kai weekly update - 2025-09-15
 
 - 🎉 **Higher limits for Google AI Pro and Ultra subscribers:** We’re psyched to
   finally announce that Google AI Pro and AI Ultra subscribers now get access to
-  significantly higher 2.5 quota limits for Gemini CLI!
+  significantly higher 2.5 quota limits for Kai!
   - **Announcement:**
     [https://blog.google/technology/developers/gemini-cli-code-assist-higher-limits/](https://blog.google/technology/developers/gemini-cli-code-assist-higher-limits/)
-- 🎉**Gemini CLI Databases and BigQuery Extensions:** Connect Gemini CLI to all
-  of your cloud data with Gemini CLI.
+- 🎉**Kai Databases and BigQuery Extensions:** Connect Kai to all of your cloud
+  data with Kai.
   - Announcement and how to get started with each of the below extensions:
     [https://cloud.google.com/blog/products/databases/gemini-cli-extensions-for-google-data-cloud?e=48754805](https://cloud.google.com/blog/products/databases/gemini-cli-extensions-for-google-data-cloud?e=48754805)
   - **AlloyDB:** Interact, manage and observe AlloyDB for PostgreSQL databases
@@ -270,11 +269,10 @@ notable changes to Gemini CLI.
   - **MCP Toolbox:** Configure and load custom tools for more than 30+ data
     sources
     ([extension](https://github.com/gemini-cli-extensions/mcp-toolbox#configuration))
-- **JSON output mode:** Have Gemini CLI output JSON with `--output-format json`
-  when invoked headlessly for easy parsing and post-processing. Includes
-  response, stats and errors.
-  ([pr](https://github.com/google-gemini/gemini-cli/pull/8119) by
-  [@jerop](https://github.com/jerop))
+- **JSON output mode:** Have Kai output JSON with `--output-format json` when
+  invoked headlessly for easy parsing and post-processing. Includes response,
+  stats and errors. ([pr](https://github.com/google-gemini/gemini-cli/pull/8119)
+  by [@jerop](https://github.com/jerop))
 - **Keybinding triggered approvals:** When you use shortcuts (`shift+y` or
   `shift+tab`) to activate YOLO/auto-edit modes any pending confirmation dialogs
   will now approve. ([pr](https://github.com/google-gemini/gemini-cli/pull/6665)
@@ -309,16 +307,16 @@ notable changes to Gemini CLI.
   changes, smaller features, UI updates, reliability and bug fixes + general
   polish made it in this week!
 
-## v0.5.0 - Gemini CLI weekly update - 2025-09-08
+## v0.5.0 - Kai weekly update - 2025-09-08
 
-- 🎉**FastMCP + Gemini CLI**🎉: Quickly install and manage your Gemini CLI MCP
-  servers with FastMCP ([video](https://imgur.com/a/m8QdCPh),
+- 🎉**FastMCP + Kai**🎉: Quickly install and manage your Kai MCP servers with
+  FastMCP ([video](https://imgur.com/a/m8QdCPh),
   [pr](https://github.com/jlowin/fastmcp/pull/1709) by
   [@jackwotherspoon](https://github.com/jackwotherspoon)**)**
   - Getting started:
     [https://gofastmcp.com/integrations/gemini-cli](https://gofastmcp.com/integrations/gemini-cli)
-- **Positional Prompt for Non-Interactive:** Seamlessly invoke Gemini CLI
-  headlessly via `gemini "Hello"`. Synonymous with passing `-p`.
+- **Positional Prompt for Non-Interactive:** Seamlessly invoke Kai headlessly
+  via `gemini "Hello"`. Synonymous with passing `-p`.
   ([gif](https://imgur.com/a/hcBznpB),
   [pr](https://github.com/google-gemini/gemini-cli/pull/7668) by
   [@allenhutchison](https://github.com/allenhutchison))
@@ -326,9 +324,9 @@ notable changes to Gemini CLI.
   and saving full output to a file by setting
   `"enableToolOutputTruncation": true `([pr](https://github.com/google-gemini/gemini-cli/pull/8039)
   by [@SandyTao520](https://github.com/SandyTao520))
-- **Edit Tool improvements:** Gemini CLI’s ability to edit files should now be
-  far more capable. ([pr](https://github.com/google-gemini/gemini-cli/pull/7679)
-  by [@silviojr](https://github.com/silviojr))
+- **Edit Tool improvements:** Kai’s ability to edit files should now be far more
+  capable. ([pr](https://github.com/google-gemini/gemini-cli/pull/7679) by
+  [@silviojr](https://github.com/silviojr))
 - **Custom witty messages:** The feature you’ve all been waiting for…
   Personalized witty loading messages via
   `"ui": { "customWittyPhrases": ["YOLO"]}` in `settings.json`.
@@ -354,10 +352,10 @@ notable changes to Gemini CLI.
   changes, smaller features, UI updates, reliability and bug fixes + general
   polish made it in this week!
 
-## v0.4.0 - Gemini CLI weekly update - 2025-09-01
+## v0.4.0 - Kai weekly update - 2025-09-01
 
-- 🎉**Gemini CLI CloudRun and Security Integrations**🎉: Automate app deployment
-  and security analysis with CloudRun and Security extension integrations. Once
+- 🎉**Kai CloudRun and Security Integrations**🎉: Automate app deployment and
+  security analysis with CloudRun and Security extension integrations. Once
   installed deploy your app to the cloud with `/deploy` and find and fix
   security vulnerabilities with `/security:analyze`.
   - Announcement and how to get started:
@@ -369,7 +367,7 @@ notable changes to Gemini CLI.
     [pr](https://github.com/google-gemini/gemini-cli/pull/6823) by
     [@silviojr](https://github.com/silviojr))
   - **Model talking to itself fix:** We’ve removed a model workaround that would
-    encourage Gemini CLI to continue conversations on your behalf. This may be
+    encourage Kai to continue conversations on your behalf. This may be
     disruptive and can be disabled via `"skipNextSpeakerCheck": false` in your
     `settings.json`
     ([feedback](https://github.com/google-gemini/gemini-cli/discussions/6666),
@@ -404,7 +402,7 @@ notable changes to Gemini CLI.
   [pr](https://github.com/google-gemini/gemini-cli/pull/6716) by
   [@abhipatel12](https://github.com/abhipatel12))
 - **2.5 Flash Lite support:** You can now use the `gemini-2.5-flash-lite` model
-  for Gemini CLI via `gemini -m …`.
+  for Kai via `gemini -m …`.
   ([gif](https://miro.medium.com/v2/resize:fit:2000/format:webp/1*P4SKwnrsyBuULoHrFqsFKQ.gif),
   [pr](https://github.com/google-gemini/gemini-cli/pull/4652) by
   [@psinha40898](https://github.com/psinha40898))

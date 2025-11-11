@@ -88,7 +88,7 @@ export async function parseArguments(settings: Settings): Promise<CliArgs> {
       description: 'Run in debug mode?',
       default: false,
     })
-    .command('$0 [query..]', 'Launch Gemini CLI', (yargsInstance) =>
+    .command('$0 [query..]', 'Launch Kai', (yargsInstance) =>
       yargsInstance
         .positional('query', {
           description:

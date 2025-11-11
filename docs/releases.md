@@ -1,4 +1,4 @@
-# Gemini CLI Releases
+# Kai Releases
 
 ## `dev` vs `prod` environment
 

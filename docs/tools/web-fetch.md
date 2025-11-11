@@ -1,6 +1,6 @@
 # Web Fetch Tool (`web_fetch`)
 
-This document describes the `web_fetch` tool for the Gemini CLI.
+This document describes the `web_fetch` tool for the Kai.
 
 ## Description
 
@@ -20,10 +20,10 @@ response.
   The prompt must contain at least one URL starting with `http://` or
   `https://`.
 
-## How to use `web_fetch` with the Gemini CLI
+## How to use `web_fetch` with the Kai
 
-To use `web_fetch` with the Gemini CLI, provide a natural language prompt that
-contains URLs. The tool will ask for confirmation before fetching any URLs. Once
+To use `web_fetch` with the Kai, provide a natural language prompt that contains
+URLs. The tool will ask for confirmation before fetching any URLs. Once
 confirmed, the tool will process URLs through Gemini API's `urlContext`.
 
 If the Gemini API cannot access the URL, the tool will fall back to fetching

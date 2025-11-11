@@ -5,8 +5,8 @@ This monorepo contains two main packages: `@google/gemini-cli` and
 
 ## `@google/gemini-cli`
 
-This is the main package for the Gemini CLI. It is responsible for the user
-interface, command parsing, and all other user-facing functionality.
+This is the main package for the Kai. It is responsible for the user interface,
+command parsing, and all other user-facing functionality.
 
 When this package is published, it is bundled into a single executable file.
 This bundle includes all of the package's dependencies, including

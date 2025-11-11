@@ -18,7 +18,7 @@ import { validateCommand } from './extensions/validate.js';
 export const extensionsCommand: CommandModule = {
   command: 'extensions <command>',
   aliases: ['extension'],
-  describe: 'Manage Gemini CLI extensions.',
+  describe: 'Manage Kai extensions.',
   builder: (yargs) =>
     yargs
       .command(installCommand)

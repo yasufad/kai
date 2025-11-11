@@ -1,8 +1,8 @@
 # Headless Mode
 
-Headless mode allows you to run Gemini CLI programmatically from command line
-scripts and automation tools without any interactive UI. This is ideal for
-scripting, automation, CI/CD pipelines, and building AI-powered tools.
+Headless mode allows you to run Kai programmatically from command line scripts
+and automation tools without any interactive UI. This is ideal for scripting,
+automation, CI/CD pipelines, and building AI-powered tools.
 
 - [Headless Mode](#headless-mode)
   - [Overview](#overview)
@@ -37,7 +37,7 @@ scripting, automation, CI/CD pipelines, and building AI-powered tools.
 
 ## Overview
 
-The headless mode provides a headless interface to Gemini CLI that:
+The headless mode provides a headless interface to Kai that:
 
 - Accepts prompts via command line arguments or stdin
 - Returns structured output (text or JSON)
@@ -57,7 +57,7 @@ gemini --prompt "What is machine learning?"
 
 ### Stdin Input
 
-Pipe input to Gemini CLI from your terminal:
+Pipe input to Kai from your terminal:
 
 ```bash
 echo "Explain this code" | gemini

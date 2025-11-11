@@ -1,14 +1,14 @@
-# Gemini CLI Extensions
+# Kai Extensions
 
 _This documentation is up-to-date with the v0.4.0 release._
 
-Gemini CLI extensions package prompts, MCP servers, and custom commands into a
-familiar and user-friendly format. With extensions, you can expand the
-capabilities of Gemini CLI and share those capabilities with others. They are
-designed to be easily installable and shareable.
+Kai extensions package prompts, MCP servers, and custom commands into a familiar
+and user-friendly format. With extensions, you can expand the capabilities of
+Kai and share those capabilities with others. They are designed to be easily
+installable and shareable.
 
 To see examples of extensions, you can browse a gallery of
-[Gemini CLI extensions](https://geminicli.com/extensions/browse/).
+[Kai extensions](https://geminicli.com/extensions/browse/).
 
 See [getting started docs](getting-started-extensions.md) for a guide on
 creating your first extension.
@@ -129,7 +129,7 @@ gemini extensions link <path>
 
 ## How it works
 
-On startup, Gemini CLI looks for extensions in `<home>/.gemini/extensions`
+On startup, Kai looks for extensions in `<home>/.gemini/extensions`
 
 Extensions exist as a directory that contains a `gemini-extension.json` file.
 For example:
@@ -181,9 +181,8 @@ The file has the following structure:
   command. Note that this differs from the MCP server `excludeTools`
   functionality, which can be listed in the MCP server config.
 
-When Gemini CLI starts, it loads all the extensions and merges their
-configurations. If there are any conflicts, the workspace configuration takes
-precedence.
+When Kai starts, it loads all the extensions and merges their configurations. If
+there are any conflicts, the workspace configuration takes precedence.
 
 ### Settings
 
@@ -264,9 +263,9 @@ For example, if both a user and the `gcp` extension define a `deploy` command:
 
 ## Variables
 
-Gemini CLI extensions allow variable substitution in `gemini-extension.json`.
-This can be useful if e.g., you need the current directory to run an MCP server
-using `"cwd": "${extensionPath}${/}run.ts"`.
+Kai extensions allow variable substitution in `gemini-extension.json`. This can
+be useful if e.g., you need the current directory to run an MCP server using
+`"cwd": "${extensionPath}${/}run.ts"`.
 
 **Supported variables:**
 

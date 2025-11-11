@@ -1,13 +1,13 @@
-# Gemini CLI for the Enterprise
+# Kai for the Enterprise
 
 This document outlines configuration patterns and best practices for deploying
-and managing Gemini CLI in an enterprise environment. By leveraging system-level
+and managing Kai in an enterprise environment. By leveraging system-level
 settings, administrators can enforce security policies, manage tool access, and
 ensure a consistent experience for all users.
 
 > **A Note on Security:** The patterns described in this document are intended
 > to help administrators create a more controlled and secure environment for
-> using Gemini CLI. However, they should not be considered a foolproof security
+> using Kai. However, they should not be considered a foolproof security
 > boundary. A determined user with sufficient privileges on their local machine
 > may still be able to circumvent these configurations. These measures are
 > designed to prevent accidental misuse and enforce corporate policy in a
@@ -231,9 +231,8 @@ effectively.
 
 ### How MCP Server Configurations are Merged
 
-Gemini CLI loads `settings.json` files from three levels: System, Workspace, and
-User. When it comes to the `mcpServers` object, these configurations are
-**merged**:
+Kai loads `settings.json` files from three levels: System, Workspace, and User.
+When it comes to the `mcpServers` object, these configurations are **merged**:
 
 1.  **Merging:** The lists of servers from all three levels are combined into a
     single list.
@@ -394,10 +393,9 @@ an environment variable, but it can also be enforced for custom tools via the
 
 ## Telemetry and Auditing
 
-For auditing and monitoring purposes, you can configure Gemini CLI to send
-telemetry data to a central location. This allows you to track tool usage and
-other events. For more information, see the
-[telemetry documentation](./telemetry.md).
+For auditing and monitoring purposes, you can configure Kai to send telemetry
+data to a central location. This allows you to track tool usage and other
+events. For more information, see the [telemetry documentation](./telemetry.md).
 
 **Example:** Enable telemetry and send it to a local OTLP collector. If
 `otlpEndpoint` is not specified, it defaults to `http://localhost:4317`.

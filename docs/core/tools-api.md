@@ -1,6 +1,6 @@
-# Gemini CLI Core: Tools API
+# Kai Core: Tools API
 
-The Gemini CLI core (`packages/core`) features a robust system for defining,
+The Kai core (`packages/core`) features a robust system for defining,
 registering, and executing tools. These tools extend the capabilities of the
 Gemini model, allowing it to interact with the local environment, fetch web
 content, and perform various actions beyond simple text generation.
@@ -115,17 +115,16 @@ architecture supports extension through:
 
 - **Command-based Discovery:** Advanced users or project administrators can
   define a `tools.discoveryCommand` in `settings.json`. This command, when run
-  by the Gemini CLI core, should output a JSON array of `FunctionDeclaration`
-  objects. The core will then make these available as `DiscoveredTool`
-  instances. The corresponding `tools.callCommand` would then be responsible for
-  actually executing these custom tools.
+  by the Kai core, should output a JSON array of `FunctionDeclaration` objects.
+  The core will then make these available as `DiscoveredTool` instances. The
+  corresponding `tools.callCommand` would then be responsible for actually
+  executing these custom tools.
 - **MCP Server(s):** For more complex scenarios, one or more MCP servers can be
-  set up and configured via the `mcpServers` setting in `settings.json`. The
-  Gemini CLI core can then discover and use tools exposed by these servers. As
-  mentioned, if you have multiple MCP servers, the tool names will be prefixed
-  with the server name from your configuration (e.g.,
-  `serverAlias__actualToolName`).
+  set up and configured via the `mcpServers` setting in `settings.json`. The Kai
+  core can then discover and use tools exposed by these servers. As mentioned,
+  if you have multiple MCP servers, the tool names will be prefixed with the
+  server name from your configuration (e.g., `serverAlias__actualToolName`).
 
 This tool system provides a flexible and powerful way to augment the Gemini
-model's capabilities, making the Gemini CLI a versatile assistant for a wide
-range of tasks.
+model's capabilities, making the Kai a versatile assistant for a wide range of
+tasks.

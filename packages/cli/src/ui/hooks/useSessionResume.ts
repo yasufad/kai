@@ -63,7 +63,7 @@ export function useSessionResume({
       });
       refreshStaticRef.current(); // Force Static component to re-render with the updated history.
 
-      // Give the history to the Gemini client.
+      // Give the history to the Kai client.
       config.getGeminiClient()?.resumeChat(clientHistory, resumedData);
     },
     [config, isGeminiClientInitialized, setQuittingMessages],

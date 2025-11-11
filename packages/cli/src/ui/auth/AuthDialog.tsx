@@ -56,7 +56,7 @@ export function AuthDialog({
         ]
       : []),
     {
-      label: 'Use Gemini API Key',
+      label: 'Use Kai API Key',
       value: AuthType.USE_GEMINI,
       key: AuthType.USE_GEMINI,
     },

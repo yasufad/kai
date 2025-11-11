@@ -237,10 +237,10 @@ describe('parseArguments', () => {
   });
 
   it('should convert positional query argument to prompt by default', async () => {
-    process.argv = ['node', 'script.js', 'Hi Gemini'];
+    process.argv = ['node', 'script.js', 'Hi Kai'];
     const argv = await parseArguments({} as Settings);
-    expect(argv.query).toBe('Hi Gemini');
-    expect(argv.prompt).toBe('Hi Gemini');
+    expect(argv.query).toBe('Hi Kai');
+    expect(argv.prompt).toBe('Hi Kai');
     expect(argv.promptInteractive).toBeUndefined();
   });
 

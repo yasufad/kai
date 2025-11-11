@@ -16,13 +16,13 @@ photos/photo2.png
 photos/photo3.png
 ```
 
-Give Gemini the following prompt:
+Give Kai the following prompt:
 
 ```cli
 Rename the photos in my "photos" directory based on their contents.
 ```
 
-Result: Gemini will ask for permission to rename your files.
+Result: Kai will ask for permission to rename your files.
 
 Select **Yes, allow once.** and your files will be renamed:
 
@@ -43,7 +43,7 @@ Give Kai the following prompt:
 Clone the 'chalk' repository from https://github.com/chalk/chalk, read its key source files, and explain how it works.
 ```
 
-Result: Gemini will perform a sequence of actions to answer your request.
+Result: Kai will perform a sequence of actions to answer your request.
 
 1.  First, it will ask for permission to run `git clone` to download the
     repository.

@@ -168,7 +168,7 @@ describe('isThinkingDefault', () => {
   });
 });
 
-describe('Gemini Client (client.ts)', () => {
+describe('Kai Client (client.ts)', () => {
   let mockContentGenerator: ContentGenerator;
   let mockConfig: Config;
   let client: GeminiClient;

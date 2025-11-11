@@ -1,4 +1,4 @@
-name: '📋 Gemini Scheduled Issue Triage'
+name: '📋 Kai Scheduled Issue Triage'
 
 on:
   schedule:
@@ -75,7 +75,7 @@ jobs:
             core.info(`Found ${labelNames.length} labels: ${labelNames.join(', ')}`);
             return labelNames;
 
-      - name: 'Run Gemini Issue Analysis'
+      - name: 'Run Kai Issue Analysis'
         if: |-
           ${{ steps.find_issues.outputs.issues_to_triage != '[]' }}
         uses: 'google-github-actions/run-gemini-cli@a3bf79042542528e91937b3a3a6fbc4967ee3c31' # ratchet:google-github-actions/run-gemini-cli@v0
@@ -224,7 +224,7 @@ jobs:
               - built-in tools (e.g., web search, code interpreter, read file, writefile, etc..),
               - Function calling issues should be under this area
               - i am getting responses from the model that are malformed.
-              - Issues concerning Gemini quality of response and inference,
+              - Issues concerning Kai quality of response and inference,
               - Issues talking about unnecessary token consumption.
               - Issues talking about Model getting stuck in a loop be watchful as this could be the root cause for issues that otherwise seem like model performance issues.
               - Memory compression
@@ -275,7 +275,7 @@ jobs:
               parsedLabels = JSON.parse(jsonString);
               core.info(`Parsed labels JSON: ${JSON.stringify(parsedLabels)}`);
             } catch (err) {
-              core.setFailed(`Failed to parse labels JSON from Gemini output: ${err.message}\nRaw output: ${rawLabels}`);
+              core.setFailed(`Failed to parse labels JSON from Kai output: ${err.message}\nRaw output: ${rawLabels}`);
               return;
             }
 

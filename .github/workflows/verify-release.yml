@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'The expected Gemini binary version that should be released (e.g., 0.5.0-preview-2).'
+        description: 'The expected Kai binary version that should be released (e.g., 0.5.0-preview-2).'
         required: true
         type: 'string'
       npm-tag:

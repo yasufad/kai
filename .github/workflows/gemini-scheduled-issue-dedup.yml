@@ -1,4 +1,4 @@
-name: '📋 Gemini Scheduled Issue Deduplication'
+name: '📋 Kai Scheduled Issue Deduplication'
 
 on:
   schedule:
@@ -36,7 +36,7 @@ jobs:
           username: '${{ github.actor }}'
           password: '${{ secrets.GITHUB_TOKEN }}'
 
-      - name: 'Run Gemini Issue Deduplication Refresh'
+      - name: 'Run Kai Issue Deduplication Refresh'
         uses: 'google-github-actions/run-gemini-cli@a3bf79042542528e91937b3a3a6fbc4967ee3c31' # ratchet:google-github-actions/run-gemini-cli@v0
         id: 'gemini_refresh_embeddings'
         env:

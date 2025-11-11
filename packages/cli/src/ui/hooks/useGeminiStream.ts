@@ -84,7 +84,7 @@ function showCitations(settings: LoadedSettings): boolean {
 }
 
 /**
- * Manages the Gemini stream, including user input, command processing,
+ * Manages the Kai stream, including user input, command processing,
  * API interaction, and tool call lifecycle.
  */
 export const useGeminiStream = (
@@ -440,7 +440,7 @@ export const useGeminiStream = (
           }
           localQueryToSendToGemini = atCommandResult.processedQuery;
         } else {
-          // Normal query for Gemini
+          // Normal query for Kai
           addItem(
             { type: MessageType.USER, text: trimmedQuery },
             userMessageTimestamp,
@@ -454,7 +454,7 @@ export const useGeminiStream = (
 
       if (localQueryToSendToGemini === null) {
         onDebugMessage(
-          'Query processing resulted in null, not sending to Gemini.',
+          'Query processing resulted in null, not sending to Kai.',
         );
         return { queryToSend: null, shouldProceed: false };
       }
@@ -505,7 +505,7 @@ export const useGeminiStream = (
           text: newGeminiMessageBuffer,
         }));
       } else {
-        // This indicates that we need to split up this Gemini Message.
+        // This indicates that we need to split up this Kai Message.
         // Splitting a message is primarily a performance consideration. There is a
         // <Static> component at the root of App.tsx which takes care of rendering
         // content statically or dynamically. Everything but the last message is
@@ -1074,7 +1074,7 @@ export const useGeminiStream = (
         return;
       }
 
-      // If all the tools were cancelled, don't submit a response to Gemini.
+      // If all the tools were cancelled, don't submit a response to Kai.
       const allToolsCancelled = geminiTools.every(
         (tc) => tc.status === 'cancelled',
       );

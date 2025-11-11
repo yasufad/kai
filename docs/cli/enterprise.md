@@ -161,10 +161,9 @@ configuration patterns described below.
 
 ## Restricting Tool Access
 
-You can significantly enhance security by controlling which tools the Gemini
-model can use. This is achieved through the `tools.core` and `tools.exclude`
-settings. For a list of available tools, see the
-[Tools documentation](../tools/index.md).
+You can significantly enhance security by controlling which tools the Kai model
+can use. This is achieved through the `tools.core` and `tools.exclude` settings.
+For a list of available tools, see the [Tools documentation](../tools/index.md).
 
 ### Allowlisting with `coreTools`
 
@@ -370,8 +369,8 @@ You can also specify a custom, hardened Docker image for the sandbox using the
 ## Controlling Network Access via Proxy
 
 In corporate environments with strict network policies, you can configure Gemini
-CLI to route all outbound traffic through a corporate proxy. This can be set via
-an environment variable, but it can also be enforced for custom tools via the
+CLI to route all outbound traffic through a corporate proxy. This can be sKai an
+environment variable, but it can also be enforced for custom tools via the
 `mcpServers` configuration.
 
 **Example (for an MCP Server):**
@@ -437,7 +436,7 @@ enforced one.
 
 Here is an example of a system `settings.json` file that combines several of the
 patterns discussed above to create a secure, controlled environment for Gemini
-CLI.
+CLI. Kai
 
 ```json
 {

@@ -4,7 +4,7 @@ This document describes the `write_todos` tool for the Kai.
 
 ## Description
 
-The `write_todos` tool allows the Gemini agent to create and manage a list of
+The `write_todos` tool allows the Kai agent to create and manage a list of
 subtasks for complex user requests. This provides you, the user, with greater
 visibility into the agent's plan and its current progress.
 

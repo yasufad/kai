@@ -31,7 +31,7 @@ type CommandResponse = {
 };
 
 const coderAgentCard: AgentCard = {
-  name: 'Gemini SDLC Agent',
+  name: 'Kai SDLC Agent',
   description:
     'An agent that generates code based on natural language instructions and streams file outputs.',
   url: 'http://localhost:41242/',

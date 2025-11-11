@@ -70,14 +70,14 @@ export function useQuotaAndFallback({
         // Tier-specific part
         if (isPaidTier) {
           messageLines.push(
-            `⚡ Increase your limits by using a Gemini API Key. See: https://goo.gle/gemini-cli-docs-auth#gemini-api-key`,
+            `⚡ Increase your limits by using a Kai API Key. See: https://goo.gle/gemini-cli-docs-auth#gemini-api-key`,
             `⚡ You can switch authentication methods by typing /auth`,
           );
         } else {
           messageLines.push(
             `⚡ Increase your limits by `,
             `⚡ - signing up for a plan with higher limits at https://goo.gle/set-up-gemini-code-assist`,
-            `⚡ - or using a Gemini API Key. See: https://goo.gle/gemini-cli-docs-auth#gemini-api-key`,
+            `⚡ - or using a Kai API Key. See: https://goo.gle/gemini-cli-docs-auth#gemini-api-key`,
             `⚡ You can switch authentication methods by typing /auth`,
           );
         }

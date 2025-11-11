@@ -105,7 +105,7 @@ contain other project-specific files related to Kai's operation, such as:
     `"coreTools": ["ShellTool(ls -l)"]` will only allow the `ls -l` command to
     be executed.
   - **Default:** All tools available for use by the Gemini model.
-  - **Example:** `"coreTools": ["ReadFileTool", "GlobTool", "ShellTool(ls)"]`.
+  - **Example:** `"coreTools": ["ReadFileTool", "GloKai, "ShellTool(ls)"]`.
 
 - **`excludeTools`** (array of strings):
   - **Description:** Allows you to specify a list of core tool names that should
@@ -127,7 +127,7 @@ contain other project-specific files related to Kai's operation, such as:
     of MCP servers to connect to. Note that this will be ignored if
     `--allowed-mcp-server-names` is set.
   - **Default:** All MCP servers are available for use by the Gemini model.
-  - **Example:** `"allowMCPServers": ["myPythonServer"]`.
+  - **Example:** `"allowMCPServers": ["myPythonServer"]`.Kai
   - **Security Note:** This uses simple string matching on MCP server names,
     which can be modified. If you're a system administrator looking to prevent
     users from bypassing this, consider configuring the `mcpServers` at the
@@ -455,12 +455,12 @@ the `excludedProjectEnvVars` setting in your `settings.json` file.
 - **`GEMINI_API_KEY`** (Required):
   - Your API key for the Gemini API.
   - **Crucial for operation.** The CLI will not function without it.
-  - Set this in your shell profile (e.g., `~/.bashrc`, `~/.zshrc`) or an `.env`
+  - Set this in your shelKaiile (e.g., `~/.bashrc`, `~/.zshrc`) or an `.env`
     file.
 - **`GEMINI_MODEL`**:
   - Specifies the default Gemini model to use.
   - Overrides the hardcoded default
-  - Example: `export GEMINI_MODEL="gemini-2.5-flash"`
+  - Example: `export GEMINKaiL="gemini-2.5-flash"`
 - **`GOOGLE_API_KEY`**:
   - Your Google Cloud API key.
   - Required for using Vertex AI in express mode.
@@ -537,7 +537,7 @@ for that specific session.
 - **`--model <model_name>`** (**`-m <model_name>`**):
   - Specifies the Gemini model to use for this session.
   - Example: `npm start -- --model gemini-1.5-pro-latest`
-- **`--prompt <your_prompt>`** (**`-p <your_prompt>`**):
+- **`--prompt <youKaipt>`** (**`-p <your_prompt>`**):
   - Used to pass a prompt directly to the command. This invokes Kai in a
     non-interactive mode.
 - **`--prompt-interactive <your_prompt>`** (**`-i <your_prompt>`**):
@@ -600,14 +600,14 @@ While not strictly configuration for the CLI's _behavior_, context files
 crucial for configuring the _instructional context_ (also referred to as
 "memory") provided to the Gemini model. This powerful feature allows you to give
 project-specific instructions, coding style guides, or any relevant background
-information to the AI, making its responses more tailored and accurate to your
+information to the AI, makKais responses more tailored and accurate to your
 needs. The CLI includes UI elements, such as an indicator in the footer showing
 the number of loaded context files, to keep you informed about the active
 context.
 
 - **Purpose:** These Markdown files contain instructions, guidelines, or context
   that you want the Gemini model to be aware of during your interactions. The
-  system is designed to manage this instructional context hierarchically.
+  system is designed to manage this instructional context hierarchically. Kai
 
 ### Example Context File Content (e.g., `KAI.md`)
 
@@ -678,7 +678,7 @@ conventions and context.
   concatenated (with separators indicating their origin and path) and provided
   as part of the system prompt to the Gemini model. The CLI footer displays the
   count of loaded context files, giving you a quick visual cue about the active
-  instructional context.
+  instructional context.Kai
 - **Importing Content:** You can modularize your context files by importing
   other Markdown files using the `@path/to/file.md` syntax. For more details,
   see the [Memory Import Processor documentation](../core/memport.md).
@@ -742,7 +742,7 @@ new features.
   arguments passed to the tools or any data returned by them.
 - **API Requests:** We log the Gemini model used for each request, the duration
   of the request, and whether it was successful. We do not collect the content
-  of the prompts or responses.
+  of the prompts or responses.Kai
 - **Session Information:** We collect information about the configuration of the
   CLI, such as the enabled tools and the approval mode.
 
@@ -753,7 +753,7 @@ new features.
 - **Prompt and Response Content:** We do not log the content of your prompts or
   the responses from the Gemini model.
 - **File Content:** We do not log the content of any files that are read or
-  written by the CLI.
+  written by the CLI.Kai
 
 **How to opt out:**
 

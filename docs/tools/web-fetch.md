@@ -24,9 +24,9 @@ response.
 
 To use `web_fetch` with the Kai, provide a natural language prompt that contains
 URLs. The tool will ask for confirmation before fetching any URLs. Once
-confirmed, the tool will process URLs through Gemini API's `urlContext`.
+confirmed, the tool will process URLs through Kai API's `urlContext`.
 
-If the Gemini API cannot access the URL, the tool will fall back to fetching
+If the Kai API cannot access the URL, the tool will fall back to fetching
 content directly from the local machine. The tool will format the response,
 including source attribution and citations where possible. The tool will then
 provide the response to the user.
@@ -53,7 +53,7 @@ web_fetch(prompt="What are the differences in the conclusions of these two paper
 
 ## Important notes
 
-- **URL processing:** `web_fetch` relies on the Gemini API's ability to access
-  and process the given URLs.
+- **URL processing:** `web_fetch` relies on the Kai API's ability to access and
+  process the given URLs.
 - **Output quality:** The quality of the output will depend on the clarity of
   the instructions in the prompt.

@@ -183,7 +183,7 @@ class WebSearchToolInvocation extends BaseToolInvocation<
 }
 
 /**
- * A tool to perform web searches using Google Search via the Gemini API.
+ * A tool to perform web searches using Google Search via the Kai API.
  */
 export class WebSearchTool extends BaseDeclarativeTool<
   WebSearchToolParams,
@@ -198,7 +198,7 @@ export class WebSearchTool extends BaseDeclarativeTool<
     super(
       WebSearchTool.Name,
       'GoogleSearch',
-      'Performs a web search using Google Search (via the Gemini API) and returns the results. This tool is useful for finding information on the internet based on a query.',
+      'Performs a web search using Google Search (via the Kai API) and returns the results. This tool is useful for finding information on the internet based on a query.',
       Kind.Search,
       {
         type: 'object',

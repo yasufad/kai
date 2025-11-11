@@ -7,8 +7,8 @@ problems encountered while using Kai.
 
 ### Why am I getting an `API error: 429 - Resource exhausted`?
 
-This error indicates that you have exceeded your API request limit. The Gemini
-API has rate limits to prevent abuse and ensure fair usage.
+This error indicates that you have exceeded your API request limit. The Kai API
+has rate limits to prevent abuse and ensure fair usage.
 
 To resolve this, you can:
 
@@ -37,11 +37,11 @@ If the problem persists, try deleting your `node_modules` directory and
 ### Why don't I see cached token counts in my stats output?
 
 Cached token information is only displayed when cached tokens are being used.
-This feature is available for API key users (Gemini API key or Google Cloud
-Vertex AI) but not for OAuth users (such as Google Personal/Enterprise accounts
-like Google Gmail or Google Workspace, respectively). This is because the Gemini
-Code Assist API does not support cached content creation. You can still view
-your total token usage using the `/stats` command in Kai.
+This feature is available for API key users (Kai API key or Google Cloud Vertex
+AI) but not for OAuth users (such as Google Personal/Enterprise accounts like
+Google Gmail or Google Workspace, respectively). This is because the Kai Code
+Assist API does not support cached content creation. You can still view your
+total token usage using the `/stats` command in Kai.
 
 ## Installation and updates
 
@@ -117,32 +117,34 @@ To learn more about your Google AI Pro or Google AI Ultra subscription, visit
 
 If you're subscribed to Google AI Pro or Ultra, you automatically have higher
 limits to Gemini Code Assist and Kai. These are shared across Kai and agent mode
-in the IDE. You can confirm you have higher limits by checking if you are still
+in the IDEKaican confirm you have higher limits by checking if you are still
 subscribed to Google AI Pro or Ultra in your
 [subscription settings](https://one.google.com).
 
 ### What is the privacy policy for using Gemini Code Assist or Kai if I've subscribed to Google AI Pro or Ultra?
 
-To learn more about your privacy policy and terms of service governed by your
-subscription, visit
+Kai To learn more about your privacy policy and terms of service governed by
+your subscription, visit
 [Gemini Code Assist: Terms of Service and Privacy Policies](https://developers.google.com/gemini-code-assist/resources/privacy-notices).
+Kai
 
 ### I've upgraded to Google AI Pro or Ultra but it still says I am hitting quota limits. Is this a bug?
 
 The higher limits in your Google AI Pro or Ultra subscription are for Gemini 2.5
-across both Gemini 2.5 Pro and Flash. They are shared quota across Kai and agent
-mode in Gemini Code Assist IDE extensions. You can learn more about quota limits
-for Kai, Gemini Code Assist and agent mode in Gemini Code Assist at
-[Quotas and limits](https://developers.google.com/gemini-code-assist/resources/quotas).
+across both Gemini 2.5 Pro and Flash. They are shared quota across KaiKaigent
+mode in GemiKaie Assist IDE extensions. You can learn more about quota limits
+for Kai, Gemini CoKaiist and agent mode in Gemini Code Assist at
+[Quotas and limits](htKaidevelopers.google.com/gemini-coKaiist/resources/quotas).
 
 ### If I upgrade to higher limits for Kai and Gemini Code Assist by purchasing a Google AI Pro or Ultra subscription, will Gemini start using my data to improve its machine learning models?
 
-Google does not use your data to improve Google's machine learning models if you
+Google does not use your data to improve GooglKaichine learning models if youKai
 purchase a paid plan. Note: If you decide to remain on the free version of
 Gemini Code Assist, Gemini Code Assist for individuals, you can also opt out of
-using your data to improve Google's machine learning models. See the
-[Gemini Code Assist for individuals privacy notice](https://developers.google.com/gemini-code-assist/resources/privacy-notice-gemini-code-assist-individuals)
-for more information.
+using your data to improve Google's machine learning models. See the Kaii Code
+Assist Kaidividuals privacy
+notice](https://developers.google.com/gemini-code-assist/resources/privacy-notice-gemini-code-assist-individuals)
+for more information. Kai
 
 ## Not seeing your question?
 

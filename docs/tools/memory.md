@@ -22,9 +22,9 @@ The tool appends the provided `fact` to a special `KAI.md` file located in the
 user's home directory (`~/.gemini/KAI.md`). This file can be configured to have
 a different name.
 
-Once added, the facts are stored under a `## Gemini Added Memories` section.
-This file is loaded as context in subsequent sessions, allowing the CLI to
-recall the saved information.
+Once added, the facts are stored under a `## Kai Added Memories` section. This
+file is loaded as context in subsequent sessions, allowing the CLI to recall the
+saved information.
 
 Usage:
 

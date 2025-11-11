@@ -90,9 +90,9 @@ export const FolderTrustDialog: React.FC<FolderTrustDialogProps> = ({
             Do you trust this folder?
           </Text>
           <Text color={theme.text.primary}>
-            Trusting a folder allows Gemini to execute commands it suggests.
-            This is a security feature to prevent accidental execution in
-            untrusted directories.
+            Trusting a folder allows Kai to execute commands it suggests. This
+            is a security feature to prevent accidental execution in untrusted
+            directories.
           </Text>
         </Box>
 

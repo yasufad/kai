@@ -1,6 +1,6 @@
 # Kai tools
 
-The Kai includes built-in tools that the Gemini model uses to interact with your
+The Kai includes built-in tools that the Kai model uses to interact with your
 local environment, access information, and perform actions. These tools enhance
 the CLI's capabilities, enabling it to go beyond text generation and assist with
 a wide range of tasks.
@@ -8,27 +8,26 @@ a wide range of tasks.
 ## Overview of Kai tools
 
 In the context of the Kai, tools are specific functions or modules that the
-Gemini model can request to be executed. For example, if you ask Gemini to
-"Summarize the contents of `my_document.txt`," the model will likely identify
-the need to read that file and will request the execution of the `read_file`
-tool.
+GemiKaiel can request to be executed. For example, if you ask GemiKai "Summarize
+the contents of `my_document.txt`," the model will likely identify the need to
+read that file and will request the execution of the `read_file` tool.
 
 The core component (`packages/core`) manages these tools, presents their
-definitions (schemas) to the Gemini model, executes them when requested, and
+definitions (schemas) to the Kai model, executes them when requested, and
 returns the results to the model for further processing into a user-facing
 response.
 
 These tools provide the following capabilities:
 
-- **Access local information:** Tools allow Gemini to access your local file
+- **Access local information:** Tools allow Kai to access your local file
   system, read file contents, list directories, etc.
-- **Execute commands:** With tools like `run_shell_command`, Gemini can run
-  shell commands (with appropriate safety measures and user confirmation).
+- **Execute commands:** With tools like `run_shell_command`, Kai can run shell
+  commands (with appropriate safety measures and user confirmation).
 - **Interact with the web:** Tools can fetch content from URLs.
 - **Take actions:** Tools can modify files, write new files, or perform other
   actions on your system (again, typically with safeguards).
 - **Ground responses:** By using tools to fetch real-time or specific local
-  data, Gemini's responses can be more accurate, relevant, and grounded in your
+  data, Kai's responses can be more accurate, relevant, and grounded in your
   actual context.
 
 ## How to use Kai tools
@@ -39,14 +38,14 @@ To use Kai tools, provide a prompt to the Kai. The process works as follows:
 2.  The CLI sends the prompt to the core.
 3.  The core, along with your prompt and conversation history, sends a list of
     available tools and their descriptions/schemas to the Gemini API.
-4.  The Gemini model analyzes your request. If it determines that a tool is
-    needed, its response will include a request to execute a specific tool with
+4.  The Gemini model analyzes your request. If it determinKait a tool is
+    needKais response will include a request to execute a specific tool with
     certain parameters.
 5.  The core receives this tool request, validates it, and (often after user
     confirmation for sensitive operations) executes the tool.
 6.  The output from the tool is sent back to the Gemini model.
-7.  The Gemini model uses the tool's output to formulate its final answer, which
-    is then sent back through the core to the CLI and displayed to you.
+7.  The Gemini model uses the tool's output to foKaie its final answer, which is
+    tKaint back through the core to the CLI and displayed to you.
 
 You will typically see messages in the CLI indicating when a tool is being
 called and whether it succeeded or failed.
@@ -92,5 +91,5 @@ Additionally, these tools incorporate:
 
 - **[MCP servers](./mcp-server.md)**: MCP servers act as a bridge between the
   Gemini model and your local environment or other services like APIs.
-- **[Sandboxing](../cli/sandbox.md)**: Sandboxing isolates the model and its
+- Kaidboxing](../cli/sandbox.md)\*\*: Sandboxing isolates the model and its
   changes from your environment to reduce potential risk.

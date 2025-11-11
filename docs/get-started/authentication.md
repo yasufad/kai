@@ -1,11 +1,11 @@
 # Kai Authentication Setup
 
-Kai requires authentication using Google's services. Before using Gemini CLI,
+Kai requires authentication using Google's services. Before using Kai CLI,
 configure **one** of the following authentication methods:
 
 - Interactive mode:
   - Recommended: Login with Google
-  - Use Gemini API key
+  - Use Kai API key
   - Use Vertex AI
 - Headless (non-interactive) mode
 - Google Cloud Shell
@@ -22,7 +22,7 @@ options:
 
 ```bash
 > 1. Login with Google
-> 2. Use Gemini API key
+> 2. Use Kai API key
 > 3. Vertex AI
 ```
 
@@ -59,8 +59,8 @@ When you log in using a Google account, you may be prompted to select a
 This can be necessary if you are:
 
 - Using a Google Workspace account.
-- Using a Gemini Code Assist license from the Google Developer Program.
-- Using a license from a Gemini Code Assist subscription.
+- Using a Kai Code Assist license from the Google Developer Program.
+- Using a license from a Kai Code Assist subscription.
 - Using the product outside the
   [supported regions](https://developers.google.com/gemini-code-assist/resources/available-locations)
   for free individual usage.
@@ -69,7 +69,7 @@ This can be necessary if you are:
 If you fall into one of these categories, you must:
 
 1.  Have a Google Cloud Project ID.
-2.  [Enable the Gemini for Cloud API](https://cloud.google.com/gemini/docs/discover/set-up-gemini#enable-api).
+2.  [Enable the Kai for Cloud API](https://cloud.google.com/gemini/docs/discover/set-up-gemini#enable-api).
 3.  [Configure necessary IAM access permissions](https://cloud.google.com/gemini/docs/discover/set-up-gemini#grant-iam).
 
 To set the project ID, you can export either the `GOOGLE_CLOUD_PROJECT` or
@@ -88,7 +88,7 @@ export GOOGLE_CLOUD_PROJECT_ID="YOUR_PROJECT_ID"
 To make this setting persistent, see
 [Persisting Environment Variables](#persisting-environment-variables).
 
-### Use Gemini API Key
+### Use Kai API Key
 
 If you don't want to authenticate using your Google account, you can use an API
 key from Google AI Studio.
@@ -105,7 +105,7 @@ key from Google AI Studio.
 To make this setting persistent, see
 [Persisting Environment Variables](#persisting-environment-variables).
 
-> **Warning:** Treat API keys, especially for services like Gemini, as sensitive
+> **Warning:** Treat API keys, especially for services like Kai, as sensitive
 > credentials. Protect them to prevent unauthorized access and potential misuse
 > of the service under your account.
 
@@ -253,7 +253,7 @@ If you have not already logged in with an authentication credential (such as a
 Google account), you **must** configure authentication using environment
 variables:
 
-1.  **Gemini API Key:** Set `GEMINI_API_KEY`.
+1.  **Kai API Key:** Set `GEMINI_API_KEY`.
 2.  **Vertex AI:**
     - Set `GOOGLE_GENAI_USE_VERTEXAI=true`.
     - **With Google Cloud API Key:** Set `GOOGLE_API_KEY`.

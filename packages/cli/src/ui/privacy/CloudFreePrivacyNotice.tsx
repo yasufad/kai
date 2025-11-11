@@ -55,7 +55,7 @@ export const CloudFreePrivacyNotice = ({
     return (
       <Box flexDirection="column" marginY={1}>
         <Text bold color={theme.text.accent}>
-          Gemini Code Assist Privacy Notice
+          Kai Code Assist Privacy Notice
         </Text>
         <Newline />
         <Text>
@@ -75,21 +75,20 @@ export const CloudFreePrivacyNotice = ({
   return (
     <Box flexDirection="column" marginY={1}>
       <Text bold color={theme.text.accent}>
-        Gemini Code Assist for Individuals Privacy Notice
+        Kai Code Assist for Individuals Privacy Notice
       </Text>
       <Newline />
       <Text color={theme.text.primary}>
         This notice and our Privacy Policy
-        <Text color={theme.text.link}>[1]</Text> describe how Gemini Code Assist
+        <Text color={theme.text.link}>[1]</Text> describe how Kai Code Assist
         handles your data. Please read them carefully.
       </Text>
       <Newline />
       <Text color={theme.text.primary}>
-        When you use Gemini Code Assist for individuals with Kai, Google
-        collects your prompts, related code, generated output, code edits,
-        related feature usage information, and your feedback to provide,
-        improve, and develop Google products and services and machine learning
-        technologies.
+        When you use Kai Code Assist for individuals with Kai, Google collects
+        your prompts, related code, generated output, code edits, related
+        feature usage information, and your feedback to provide, improve, and
+        develop Google products and services and machine learning technologies.
       </Text>
       <Newline />
       <Text color={theme.text.primary}>

@@ -1,8 +1,8 @@
 # Kai Core
 
-Kai's core package (`packages/core`) is the backend portion of Gemini CLI,
-handling communication with the Gemini API, managing tools, and processing
-requests sent from `packages/cli`. For a general overview of Kai, see the
+Kai's core package (`packages/core`) is the backend portion of Kai CLI, handling
+communication with the GeminKai managing tools, and processing requests sent
+from `packages/cli`. For a general overview of Kai, see the
 [main documentation page](../index.md).
 
 ## Navigating this section
@@ -19,17 +19,17 @@ requests sent from `packages/cli`. For a general overview of Kai, see the
 While the `packages/cli` portion of Kai provides the user interface,
 `packages/core` is responsible for:
 
-- **Gemini API interaction:** Securely communicating with the Google Gemini API,
+- **Kai API interaction:** Securely communicating with the Google Kai API,
   sending user prompts, and receiving model responses.
-- **Prompt engineering:** Constructing effective prompts for the Gemini model,
+- **Prompt engineering:** Constructing effective prompts for the Kai model,
   potentially incorporating conversation history, tool definitions, and
   instructional context from `KAI.md` files.
 - **Tool management & orchestration:**
   - Registering available tools (e.g., file system tools, shell command
     execution).
-  - Interpreting tool use requests from the Gemini model.
+  - Interpreting tool use requests from the Kai model.
   - Executing the requested tools with the provided arguments.
-  - Returning tool execution results to the Gemini model for further processing.
+  - Returning tool execution results to the Kai model for further processing.
 - **Session and state management:** Keeping track of the conversation state,
   including history and any relevant context required for coherent interactions.
 - **Configuration:** Managing core-specific configurations, such as API key
@@ -40,7 +40,7 @@ While the `packages/cli` portion of Kai provides the user interface,
 The core plays a vital role in security:
 
 - **API key management:** It handles the `GEMINI_API_KEY` and ensures it's used
-  securely when communicating with the Gemini API.
+  securely when communicating with the Kai API.
 - **Tool execution:** When tools interact with the local system (e.g.,
   `run_shell_command`), the core (and its underlying tool implementations) must
   do so with appropriate caution, often involving sandboxing mechanisms to
@@ -48,7 +48,7 @@ The core plays a vital role in security:
 
 ## Chat history compression
 
-To ensure that long conversations don't exceed the token limits of the Gemini
+To ensure that long conversations don't exceed the token limits of the Kai
 model, the core includes a chat history compression feature.
 
 When a conversation approaches the token limit for the configured model, the
@@ -91,9 +91,9 @@ You can use the [`/memory` command](../cli/commands.md) to `show`, `add`, and
 
 ## Citations
 
-When Gemini finds it is reciting text from a source it appends the citation to
-the output. It is enabled by default but can be disabled with the
-ui.showCitations setting.
+When Kai finds it is reciting text from a source it appends the citation to the
+output. It is enabled by default but can be disabled with the ui.showCitations
+setting.
 
 - When proposing an edit the citations display before giving the user the option
   to accept.

@@ -5,10 +5,10 @@ This document provides a guide to configuring and using Model Context Protocol
 
 ## What is an MCP server?
 
-An MCP server is an application that exposes tools and resources to the Gemini
-CLI through the Model Context Protocol, allowing it to interact with external
-systems and data sources. MCP servers act as a bridge between the Gemini model
-and your local environment or other services like APIs.
+An MCP server is an application that exposes tools and resources to the Kai CLI
+through the Model Context Protocol, allowing it to interact with external
+systems and data sources. MCP servers act as a bridge between the Kai model and
+your local environment or other services like APIs.
 
 An MCP server enables the Kai to:
 
@@ -37,8 +37,7 @@ The discovery process is orchestrated by `discoverMcpTools()`, which:
 2. **Establishes connections** using appropriate transport mechanisms (Stdio,
    SSE, or Streamable HTTP)
 3. **Fetches tool definitions** from each server using the MCP protocol
-4. **Sanitizes and validates** tool schemas for compatibility with the Gemini
-   API
+4. **Sanitizes and validates** tool schemas for compatibility with the Kai API
 5. **Registers tools** in the global tool registry with conflict resolution
 
 ### Execution Layer (`mcp-tool.ts`)
@@ -468,8 +467,7 @@ Upon successful connection:
 2. **Schema validation:** Each tool's function declaration is validated
 3. **Tool filtering:** Tools are filtered based on `includeTools` and
    `excludeTools` configuration
-4. **Name sanitization:** Tool names are cleaned to meet Gemini API
-   requirements:
+4. **Name sanitization:** Tool names are cleaned to meet Kai API requirements:
    - Invalid characters (non-alphanumeric, underscore, dot, hyphen) are replaced
      with underscores
    - Names longer than 63 characters are truncated with middle replacement
@@ -488,7 +486,7 @@ When multiple servers expose tools with the same name:
 
 ### 4. Schema Processing
 
-Tool parameter schemas undergo sanitization for Gemini API compatibility:
+Tool parameter schemas undergo sanitization for Kai API compatibility:
 
 - **`$schema` properties** are removed
 - **`additionalProperties`** are stripped
@@ -509,7 +507,7 @@ After discovery:
 
 ## Tool Execution Flow
 
-When the Gemini model decides to use an MCP tool, the following execution flow
+When the Kai model decides to use an MCP tool, the following execution flow
 occurs:
 
 ### 1. Tool Invocation
@@ -617,8 +615,8 @@ Discovery State: COMPLETED
 
 ### Tool Usage
 
-Once discovered, MCP tools are available to the Gemini model like built-in
-tools. The model will automatically:
+Once discovered, MCP tools are available to the Kai model like built-in tools.
+The model will automatically:
 
 1. **Select appropriate tools** based on your requests
 2. **Present confirmation dialogs** (unless the server is trusted)
@@ -730,7 +728,7 @@ The MCP integration tracks several states:
 ### Schema Compatibility
 
 - **Property stripping:** The system automatically removes certain schema
-  properties (`$schema`, `additionalProperties`) for Gemini API compatibility
+  properties (`$schema`, `additionalProperties`) for Kai API compatibility
 - **Name sanitization:** Tool names are automatically sanitized to meet API
   requirements
 - **Conflict resolution:** Tool name conflicts between servers are resolved
@@ -802,7 +800,7 @@ When the Kai receives this response, it will:
     and an image were received.
 
 This enables you to build sophisticated tools that can provide rich, multi-modal
-context to the Gemini model.
+context to the Gemini model. Kai
 
 ## MCP Prompts as Slash Commands
 

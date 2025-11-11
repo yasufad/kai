@@ -180,8 +180,8 @@ describe('AppContainer State Management', () => {
     vi.mock('../utils/windowTitle.js', async () => ({
       computeWindowTitle: vi.fn(
         (folderName: string) =>
-          // Default behavior: return "Gemini - {folderName}" unless CLI_TITLE is set
-          process.env['CLI_TITLE'] || `Gemini - ${folderName}`,
+          // Default behavior: return "Kai - {folderName}" unless CLI_TITLE is set
+          process.env['CLI_TITLE'] || `Kai - ${folderName}`,
       ),
     }));
 
@@ -1162,7 +1162,7 @@ describe('AppContainer State Management', () => {
       );
       expect(titleWrites).toHaveLength(1);
       expect(titleWrites[0][0]).toBe(
-        `\x1b]2;${'Gemini - workspace'.padEnd(80, ' ')}\x07`,
+        `\x1b]2;${'Kai - workspace'.padEnd(80, ' ')}\x07`,
       );
       unmount();
     });
@@ -1323,7 +1323,7 @@ describe('AppContainer State Management', () => {
       } as unknown as LoadedSettings;
 
       // Mock CLI_TITLE environment variable
-      vi.stubEnv('CLI_TITLE', 'Custom Gemini Title');
+      vi.stubEnv('CLI_TITLE', 'Custom Kai Title');
 
       // Mock the streaming state as Idle with no thought
       mockedUseGeminiStream.mockReturnValue({
@@ -1351,7 +1351,7 @@ describe('AppContainer State Management', () => {
       );
       expect(titleWrites).toHaveLength(1);
       expect(titleWrites[0][0]).toBe(
-        `\x1b]2;${'Custom Gemini Title'.padEnd(80, ' ')}\x07`,
+        `\x1b]2;${'Custom Kai Title'.padEnd(80, ' ')}\x07`,
       );
       unmount();
     });

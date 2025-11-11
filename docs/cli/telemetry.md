@@ -339,15 +339,15 @@ Tracks file operations performed by tools.
 
 #### API
 
-Captures Gemini API requests, responses, and errors.
+Captures Kai API requests, responses, and errors.
 
-- `gemini_cli.api_request`: Request sent to Gemini API.
+- `gemini_cli.api_request`: Request sent to Kai API.
   - **Attributes**:
     - `model` (string)
     - `prompt_id` (string)
     - `request_text` (string, optional)
 
-- `gemini_cli.api_response`: Response received from Gemini API.
+- `gemini_cli.api_response`: Response received from Kai API.
   - **Attributes**:
     - `model` (string)
     - `status_code` (int|string)

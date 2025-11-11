@@ -690,7 +690,7 @@ export class AgentExecutor<TOutput extends z.ZodTypeAny> {
     } catch (error) {
       await reportError(
         error,
-        `Error initializing Gemini chat for agent ${this.definition.name}.`,
+        `Error initializing Kai chat for agent ${this.definition.name}.`,
         startHistory,
         'startChat',
       );

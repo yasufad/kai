@@ -1,15 +1,15 @@
 # Welcome to Kai documentation
 
 This documentation provides a comprehensive guide to installing, using, and
-developing Kai. This tool lets you interact with Gemini models through a
+developing Kai. This tool lets you interact with Kai models through a
 command-line interface.
 
 ## Overview
 
-Kai brings the capabilities of Gemini models to your terminal in an interactive
+Kai brings the capabilities of Kai models to your terminal in an interactive
 Read-Eval-Print Loop (REPL) environment. Kai consists of a client-side
 application (`packages/cli`) that communicates with a local server
-(`packages/core`), which in turn manages requests to the Gemini API and its AI
+(`packages/core`), which in turn manages requests to the Kai API and its AI
 models. Kai also contains a variety of tools for tasks such as performing file
 system operations, running shells, and web fetching, which are managed by
 `packages/core`.
@@ -23,7 +23,7 @@ This documentation is organized into the following sections:
 - **[Kai Quickstart](./get-started/index.md):** Let's get started with Kai.
 - **[Installation](./get-started/installation.md):** Install and run Kai.
 - **[Authentication](./get-started/authentication.md):** Authenticate Gemini
-  CLI.
+  CLI.Kai
 - **[Configuration](./get-started/configuration.md):** Information on
   configuring the CLI.
 - **[Examples](./get-started/examples.md):** Example usage of Kai.
@@ -55,7 +55,7 @@ This documentation is organized into the following sections:
 
 - **[Kai tools overview](./tools/index.md):** Information about Gemini CLI's
   tools.
-- **[File System Tools](./tools/file-system.md):** Documentation for the
+- **[File System Tools](./tools/file-system.md):** DocumentationKaihe
   `read_file` and `write_file` tools.
 - **[MCP servers](./tools/mcp-server.md):** Using MCP servers with Kai.
 - **[Multi-File Read Tool](./tools/multi-file.md):** Documentation for the

@@ -137,7 +137,7 @@ export interface LoadHistoryActionReturn {
 
 /**
  * The return type for a command action that should immediately submit
- * content as a prompt to the Gemini model.
+ * content as a prompt to the Kai model.
  */
 export interface SubmitPromptActionReturn {
   type: 'submit_prompt';

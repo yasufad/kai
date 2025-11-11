@@ -16,7 +16,7 @@ required for rich, interactive workflows with the Kai agent.
 
 ### 1.2 Motivation
 
-Recent work integrating Kai with clients like Zed and Gemini Code Assist’s agent
+Recent work integrating Kai with clients like Zed and Kai Code Assist’s agent
 mode has highlighted the need for a robust, standard communication protocol.
 Standardizing on A2A provides several key advantages:
 
@@ -372,9 +372,9 @@ extension.
 
 **Method: `commands/get`**
 
-This method allows the client to discover slash commands supported by Gemini
-CLI. The client should call this method during startup to dynamically populate
-its command list.
+This method allows the client to discover slash commands supported by Kai CLI.
+The client should call this method during startup to dynamically populate its
+command list.
 
 ```proto
 // Response message containing the list of all top-level slash commands.

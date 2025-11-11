@@ -246,7 +246,7 @@ describe('convertSessionToHistoryFormats', () => {
   });
 
   describe('tool calls in client history', () => {
-    it('should convert tool calls to correct Gemini client history format', () => {
+    it('should convert tool calls to correct Kai client history format', () => {
       const messages: MessageRecord[] = [
         {
           id: 'msg-1',

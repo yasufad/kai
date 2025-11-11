@@ -10,7 +10,7 @@ import type { Part } from '@google/genai';
 import { partListUnionToString } from '@google/gemini-cli-core';
 import { MessageType, ToolCallStatus } from '../types.js';
 /**
- * Converts session/conversation data into UI history and Gemini client history formats.
+ * Converts session/conversation data into UI history and Kai client history formats.
  */
 export function convertSessionToHistoryFormats(
   messages: ConversationRecord['messages'],
@@ -65,7 +65,7 @@ export function convertSessionToHistoryFormats(
     }
   }
 
-  // Convert to Gemini client history format
+  // Convert to Kai client history format
   const clientHistory: Array<{ role: 'user' | 'model'; parts: Part[] }> = [];
 
   for (const msg of messages) {
@@ -90,7 +90,7 @@ export function convertSessionToHistoryFormats(
         parts: [{ text: contentString }],
       });
     } else if (msg.type === 'gemini') {
-      // Handle Gemini messages with potential tool calls
+      // Handle Kai messages with potential tool calls
       const hasToolCalls =
         'toolCalls' in msg && msg.toolCalls && msg.toolCalls.length > 0;
 
@@ -159,7 +159,7 @@ export function convertSessionToHistoryFormats(
           });
         }
       } else {
-        // Regular Gemini message without tool calls
+        // Regular Kai message without tool calls
         const contentString = partListUnionToString(msg.content);
         if (msg.content && contentString.trim()) {
           clientHistory.push({

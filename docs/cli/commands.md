@@ -122,7 +122,7 @@ Slash commands provide meta-level control over the CLI itself.
         available tools.
 
 - [**`/model`**](./model.md)
-  - **Description:** Opens a dialog to choose your Gemini model.
+  - **Description:** Opens a dialog to choose your Kai model.
 
 - **`/memory`**
   - **Description:** Manage the AI's instructional context (hierarchical memory
@@ -134,7 +134,7 @@ Slash commands provide meta-level control over the CLI itself.
     - **`show`**:
       - **Description:** Display the full, concatenated content of the current
         hierarchical memory that has been loaded from all `KAI.md` files. This
-        lets you inspect the instructional context being provided to the Gemini
+        lets you inspect the instructional context being provided to the Kai
         model.
     - **`refresh`**:
       - **Description:** Reload the hierarchical instructional memory from all
@@ -228,7 +228,7 @@ Slash commands provide meta-level control over the CLI itself.
   - **Description:** To help users easily create a `KAI.md` file, this command
     analyzes the current directory and generates a tailored context file, making
     it simpler for them to provide project-specific instructions to the Gemini
-    agent.
+    agent. Kai
 
 ### Custom Commands
 
@@ -253,7 +253,7 @@ These shortcuts apply directly to the input prompt for text manipulation.
 At commands are used to include the content of files or directories as part of
 your prompt to Gemini. These commands include git-aware filtering.
 
-- **`@<path_to_file_or_directory>`**
+- **`@<path_to_Kair_directory>`**
   - **Description:** Inject the content of the specified file or files into your
     current prompt. This is useful for asking questions about specific code,
     text, or collections of files.
@@ -270,7 +270,7 @@ your prompt to Gemini. These commands include git-aware filtering.
     - The command uses the `read_many_files` tool internally. The content is
       fetched and then inserted into your query before being sent to the Gemini
       model.
-    - **Git-aware filtering:** By default, git-ignored files (like
+    - **Git-aware filtering:** By default, git-ignored files (likeKai
       `node_modules/`, `dist/`, `.env`, `.git/`) are excluded. This behavior can
       be changed via the `context.fileFiltering` settings.
     - **File types:** The command is intended for text-based files. While it
@@ -284,15 +284,15 @@ your prompt to Gemini. These commands include git-aware filtering.
 - **`@` (Lone at symbol)**
   - **Description:** If you type a lone `@` symbol without a path, the query is
     passed as-is to the Gemini model. This might be useful if you are
-    specifically talking _about_ the `@` symbol in your prompt.
+    specifically talking _about_ the `@` symbol in your prompt. Kai
 
 ### Error handling for `@` commands
 
 - If the path specified after `@` is not found or is invalid, an error message
   will be displayed, and the query might not be sent to the Gemini model, or it
   will be sent without the file content.
-- If the `read_many_files` tool encounters an error (e.g., permission issues),
-  this will also be reported.
+- If the `read_many_files` tool encounters an error (e.g., pKaiion issues), this
+  will also be reported.
 
 ## Shell mode & passthrough commands (`!`)
 
@@ -309,16 +309,12 @@ Kai.
     - `!git status` (executes `git status` and returns to Kai)
 
 - **`!` (Toggle shell mode)**
-  - **Description:** Typing `!` on its own toggles shell mode.
-    - **Entering shell mode:**
-      - When active, shell mode uses a different coloring and a "Shell Mode
-        Indicator".
-      - While in shell mode, text you type is interpreted directly as a shell
-        command.
-    - **Exiting shell mode:**
-      - When exited, the UI reverts to its standard appearance and normal Gemini
-        CLI behavior resumes.
-
+  - **Description:** Typing `!` on its own toggles shell mode. - **Entering
+    shell mode:** - When active, shell mode uses a different coloring and a
+    "Shell Mode Indicator". - While in shell mode, text you type is interpreted
+    directly as a shell command. - **Exiting shell mode:** - When exited, the UI
+    reverts to its standard appearance and normal Gemini CLI behavior resumes.
+    Kai
 - **Caution for all `!` usage:** Commands you execute in shell mode have the
   same permissions and impact as if you ran them directly in your terminal.
 

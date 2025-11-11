@@ -1277,7 +1277,7 @@ describe('useGeminiStream', () => {
       });
     });
 
-    it('should stop processing and not call Gemini when a command is handled without a tool call', async () => {
+    it('should stop processing and not call Kai when a command is handled without a tool call', async () => {
       const uiOnlyCommandResult: SlashCommandProcessorResult = {
         type: 'handled',
       };
@@ -1296,7 +1296,7 @@ describe('useGeminiStream', () => {
       });
     });
 
-    it('should call Gemini with prompt content when slash command returns a `submit_prompt` action', async () => {
+    it('should call Kai with prompt content when slash command returns a `submit_prompt` action', async () => {
       const customCommandResult: SlashCommandProcessorResult = {
         type: 'submit_prompt',
         content: 'This is the actual prompt from the command file.',

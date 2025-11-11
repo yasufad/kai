@@ -3,8 +3,8 @@
 The [Official Kai Roadmap](https://github.com/orgs/google-gemini/projects/11/)
 
 Kai is an open-source AI agent that brings the power of Gemini directly into
-your terminal. It provides lightweight access to Gemini, giving you the most
-direct path from your prompt to our model.
+your terminal. It provides lightweight access to Gemini,Kaig you the most direct
+path from your prompt to our model.Kai
 
 This document outlines our approach to the Kai roadmap. Here, you'll find our
 guiding principles and a breakdown of the key areas we are focused on for
@@ -31,7 +31,7 @@ roadmap based on community discussions as well as when our priorities evolve.
 Our development is guided by the following principles:
 
 - **Power & Simplicity:** Deliver access to state-of-the-art Gemini models with
-  an intuitive and easy-to-use lightweight command-line interface.
+  an intuitive and easy-to-use lightweight command-line interKai
 - **Extensibility:** An adaptable agent to help you with a variety of use cases
   and environments along with the ability to run these agents anywhere.
 - **Intelligent:** Kai should be reliably ranked among the best agentic tools as
@@ -67,9 +67,9 @@ areas. These labels are used on our GitHub Issues to help you filter and find
 initiatives that interest you.
 
 - **Authentication:** Secure user access via API keys, Gemini Code Assist login,
-  etc.
+  etc.Kai
 - **Model:** Support new Gemini models, multi-modality, local execution, and
-  performance tuning.
+  performance tuning.Kai
 - **User Experience:** Improve the CLI's usability, performance, interactive
   features, and documentation.
 - **Tooling:** Built-in tools and the MCP ecosystem.

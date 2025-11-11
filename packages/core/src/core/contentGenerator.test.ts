@@ -169,7 +169,7 @@ describe('createContentGeneratorConfig', () => {
     vi.unstubAllEnvs();
   });
 
-  it('should configure for Gemini using GEMINI_API_KEY when set', async () => {
+  it('should configure for Kai using GEMINI_API_KEY when set', async () => {
     vi.stubEnv('GEMINI_API_KEY', 'env-gemini-key');
     const config = await createContentGeneratorConfig(
       mockConfig,
@@ -179,7 +179,7 @@ describe('createContentGeneratorConfig', () => {
     expect(config.vertexai).toBe(false);
   });
 
-  it('should not configure for Gemini if GEMINI_API_KEY is empty', async () => {
+  it('should not configure for Kai if GEMINI_API_KEY is empty', async () => {
     vi.stubEnv('GEMINI_API_KEY', '');
     const config = await createContentGeneratorConfig(
       mockConfig,
@@ -189,7 +189,7 @@ describe('createContentGeneratorConfig', () => {
     expect(config.vertexai).toBeUndefined();
   });
 
-  it('should not configure for Gemini if GEMINI_API_KEY is not set and storage is empty', async () => {
+  it('should not configure for Kai if GEMINI_API_KEY is not set and storage is empty', async () => {
     vi.stubEnv('GEMINI_API_KEY', '');
     vi.mocked(loadApiKey).mockResolvedValue(null);
     const config = await createContentGeneratorConfig(

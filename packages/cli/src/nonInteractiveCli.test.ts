@@ -573,7 +573,7 @@ describe('runNonInteractive', () => {
       shouldProceed: true,
     });
 
-    // Mock a simple stream response from the Gemini client
+    // Mock a simple stream response from the Kai client
     const events: ServerGeminiStreamEvent[] = [
       { type: GeminiEventType.Content, value: 'Summary complete.' },
       {

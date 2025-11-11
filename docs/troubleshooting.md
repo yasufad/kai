@@ -16,7 +16,7 @@ topics on:
     Google Code Assist plan.
   - For Google Cloud accounts, you can work around this by setting
     `GOOGLE_CLOUD_PROJECT` to your project ID.
-  - Alternatively, you can obtain the Gemini API key from
+  - Alternatively, you can obtain the Kai API key from
     [Google AI Studio](http://aistudio.google.com/app/apikey), which also
     includes a separate free tier.
 

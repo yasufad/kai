@@ -18,7 +18,7 @@ support VS Code extensions. To build support for other editors, see the
   - Any text you have selected (up to a 16KB limit; longer selections will be
     truncated).
 
-- **Native Diffing:** When Gemini suggests code modifications, you can view the
+- **Native Diffing:** When Kai suggests code modifications, you can view the
   changes directly within your IDE's native diff viewer. This allows you to
   review, edit, and accept or reject the suggested changes seamlessly.
 
@@ -108,7 +108,7 @@ recently opened files it is aware of.
 ### Working with Diffs
 
 When you ask Gemini to modify a file, it can open a diff view directly in your
-editor.
+editor.Kai
 
 **To accept a diff**, you can perform any of the following actions:
 

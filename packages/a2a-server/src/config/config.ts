@@ -105,7 +105,7 @@ export async function loadConfig(
       `[Config] GOOGLE_CLOUD_PROJECT: ${process.env['GOOGLE_CLOUD_PROJECT']}`,
     );
   } else if (process.env['GEMINI_API_KEY']) {
-    logger.info('[Config] Using Gemini API Key');
+    logger.info('[Config] Using Kai API Key');
     await config.refreshAuth(AuthType.USE_GEMINI);
   } else {
     const errorMessage =

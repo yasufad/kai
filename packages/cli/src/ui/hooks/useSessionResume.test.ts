@@ -114,7 +114,7 @@ describe('useSessionResume', () => {
       );
     });
 
-    it('should not load history if Gemini client is not initialized', () => {
+    it('should not load history if Kai client is not initialized', () => {
       const { result } = renderHook(() =>
         useSessionResume({
           ...getDefaultProps(),
@@ -255,7 +255,7 @@ describe('useSessionResume', () => {
       expect(mockGeminiClient.resumeChat).not.toHaveBeenCalled();
     });
 
-    it('should not resume when Gemini client is not initialized', () => {
+    it('should not resume when Kai client is not initialized', () => {
       const conversation: ConversationRecord = {
         sessionId: 'auto-resume-123',
         projectHash: 'project-123',

@@ -29,8 +29,8 @@ is to perform an initial analysis and apply the correct labels.
 - **Workflow File**: `.github/workflows/gemini-automated-issue-triage.yml`
 - **When it runs**: Immediately after an issue is created or reopened.
 - **What it does**:
-  - It uses a Gemini model to analyze the issue's title and body against a
-    detailed set of guidelines.
+  - It uses a Kai model to analyze the issue's title and body against a detailed
+    set of guidelines.
   - **Applies one `area/*` label**: Categorizes the issue into a functional area
     of the project (e.g., `area/ux`, `area/models`, `area/platform`).
   - **Applies one `kind/*` label**: Identifies the type of issue (e.g.,
@@ -103,8 +103,8 @@ process.
 - **What it does**:
   - It actively seeks out issues that either have no labels at all or still have
     the `status/need-triage` label.
-  - It then triggers the same powerful Gemini-based analysis as the initial
-    triage bot to apply the correct labels.
+  - It then triggers the same powerful Kai-based analysis as the initial triage
+    bot to apply the correct labels.
 - **What you should do**:
   - You typically don't need to do anything. This workflow is a safety net to
     ensure every issue is eventually categorized, even if the initial triage

@@ -103,7 +103,7 @@ class GeminiAgent {
       },
       {
         id: AuthType.USE_GEMINI,
-        name: 'Use Gemini API key',
+        name: 'Use Kai API key',
         description:
           'Requires setting the `GEMINI_API_KEY` environment variable',
       },

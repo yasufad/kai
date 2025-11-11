@@ -142,7 +142,7 @@ export const Footer: React.FC = () => {
         </Box>
       )}
 
-      {/* Right Section: Gemini Label and Console Summary */}
+      {/* Right Section: Kai Label and Console Summary */}
       {!hideModelInfo && (
         <Box alignItems="center" justifyContent="flex-end">
           <Box alignItems="center">

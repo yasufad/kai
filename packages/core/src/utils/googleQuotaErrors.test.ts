@@ -222,7 +222,7 @@ describe('classifyGoogleError', () => {
           '@type': 'type.googleapis.com/google.rpc.Help',
           links: [
             {
-              description: 'Learn more about Gemini API quotas',
+              description: 'Learn more about Kai API quotas',
               url: 'https://ai.google.dev/gemini-api/docs/rate-limits',
             },
           ],

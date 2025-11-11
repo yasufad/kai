@@ -1,10 +1,10 @@
 # Ignoring Files
 
-This document provides an overview of the Gemini Ignore (`.geminiignore`)
-feature of the Kai.
+This document provides an overview of the Kai Ignore (`.geminiignore`) feature
+of the Kai.
 
 The Kai includes the ability to automatically ignore files, similar to
-`.gitignore` (used by Git) and `.aiexclude` (used by Gemini Code Assist). Adding
+`.gitignore` (used by Git) and `.aiexclude` (used by Kai Code Assist). Adding
 paths to your `.geminiignore` file will exclude them from tools that support
 this feature, although they will still be visible to other services (such as
 Git).

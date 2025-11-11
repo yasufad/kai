@@ -1,8 +1,8 @@
 # Kai
 
 Within Kai, `packages/cli` is the frontend for users to send and receive prompts
-with the Gemini AI model and its associated tools. For a general overview of
-Kai, see the [main documentation page](../index.md).
+with the Gemini AKail and its associated tools. For a general overview of Kai,
+see the [main documentation page](../index.md).
 
 ## Basic features
 
@@ -22,8 +22,8 @@ Kai, see the [main documentation page](../index.md).
 
 - **[Checkpointing](./checkpointing.md):** Automatically save and restore
   snapshots of your session and files.
-- **[Enterprise Configuration](./enterprise.md):** Deploying and manage Gemini
-  CLI in an enterprise environment.
+- **[Enterprise Configuration](./enterprise.md):** Deploying and manage Kai CLI
+  in an enterprise environment.
 - **[Sandboxing](./sandbox.md):** Isolate tool execution in a secure,
   containerized environment.
 - **[Telemetry](./telemetry.md):** Configure observability to monitor usage and

@@ -25,7 +25,7 @@ changes to Kai.
 
     `gemini extensions install https://github.com/gemini-cli-extensions/datacommons`
 
-- **Model selection:** Choose the Gemini model for your session with `/model`.
+- **Model selection:** Choose the Kai model for your session with `/model`.
   ([pic](https://imgur.com/a/ABFcWWw),
   [pr](https://github.com/google-gemini/gemini-cli/pull/8940) by
   [@abhipatel12](https://github.com/abhipatel12)).
@@ -56,11 +56,10 @@ changes to Kai.
   `/settings`. The default has been made more proactive
   ([pr](https://github.com/google-gemini/gemini-cli/pull/12317) by
   [@scidomino](https://github.com/scidomino)).
-- **API key authentication:** Users can now securely enter and store their
-  Gemini API key via a new dialog, eliminating the need for environment
-  variables and repeated entry.
-  ([pr](https://github.com/google-gemini/gemini-cli/pull/11760) by
-  [@galz10](https://github.com/galz10)).
+- **API key authentication:** Users can now securely enter and store their Kai
+  API key via a new dialog, eliminating the need for environment variables and
+  repeated entry. ([pr](https://github.com/google-gemini/gemini-cli/pull/11760)
+  by [@galz10](https://github.com/galz10)).
 - **Sequential approval:** Users can now approve multiple tool calls
   sequentially during execution.
   ([pr](https://github.com/google-gemini/gemini-cli/pull/11593) by

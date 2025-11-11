@@ -249,7 +249,7 @@ describe('editCorrector', () => {
     });
 
     describe('Scenario Group 1: originalParams.old_string matches currentContent directly', () => {
-      it('Test 1.1: old_string (no literal \\), new_string (escaped by Gemini) -> new_string unescaped', async () => {
+      it('Test 1.1: old_string (no literal \\), new_string (escaped by Kai) -> new_string unescaped', async () => {
         const currentContent = 'This is a test string to find me.';
         const originalParams = {
           file_path: '/test/file.txt',
@@ -292,7 +292,7 @@ describe('editCorrector', () => {
         expect(result.params.old_string).toBe('find me');
         expect(result.occurrences).toBe(1);
       });
-      it('Test 1.3: old_string (with literal \\), new_string (escaped by Gemini) -> new_string unchanged (still escaped)', async () => {
+      it('Test 1.3: old_string (with literal \\), new_string (escaped by Kai) -> new_string unchanged (still escaped)', async () => {
         const currentContent = 'This is a test string to find\\me.';
         const originalParams = {
           file_path: '/test/file.txt',
@@ -338,7 +338,7 @@ describe('editCorrector', () => {
     });
 
     describe('Scenario Group 2: originalParams.old_string does NOT match, but unescapeStringForGeminiBug(originalParams.old_string) DOES match', () => {
-      it('Test 2.1: old_string (over-escaped, no intended literal \\), new_string (escaped by Gemini) -> new_string unescaped', async () => {
+      it('Test 2.1: old_string (over-escaped, no intended literal \\), new_string (escaped by Kai) -> new_string unescaped', async () => {
         const currentContent = 'This is a test string to find "me".';
         const originalParams = {
           file_path: '/test/file.txt',
@@ -402,7 +402,7 @@ describe('editCorrector', () => {
     });
 
     describe('Scenario Group 3: LLM Correction Path', () => {
-      it('Test 3.1: old_string (no literal \\), new_string (escaped by Gemini), LLM re-escapes new_string -> final new_string is double unescaped', async () => {
+      it('Test 3.1: old_string (no literal \\), new_string (escaped by Kai), LLM re-escapes new_string -> final new_string is double unescaped', async () => {
         const currentContent = 'This is a test string to corrected find me.';
         const originalParams = {
           file_path: '/test/file.txt',
@@ -424,7 +424,7 @@ describe('editCorrector', () => {
         expect(result.params.old_string).toBe('find me');
         expect(result.occurrences).toBe(1);
       });
-      it('Test 3.2: old_string (with literal \\), new_string (escaped by Gemini), LLM re-escapes new_string -> final new_string is unescaped once', async () => {
+      it('Test 3.2: old_string (with literal \\), new_string (escaped by Kai), LLM re-escapes new_string -> final new_string is unescaped once', async () => {
         const currentContent = 'This is a test string to corrected find me.';
         const originalParams = {
           file_path: '/test/file.txt',

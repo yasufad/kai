@@ -13,8 +13,8 @@ import { useAppContext } from '../contexts/AppContext.js';
 import { AppHeader } from './AppHeader.js';
 import { useSettings } from '../contexts/SettingsContext.js';
 
-// Limit Gemini messages to a very high number of lines to mitigate performance
-// issues in the worst case if we somehow get an enormous response from Gemini.
+// Limit Kai messages to a very high number of lines to mitigate performance
+// issues in the worst case if we somehow get an enormous response from Kai.
 // This threshold is arbitrary but should be high enough to never impact normal
 // usage.
 const MAX_GEMINI_MESSAGE_LINES = 65536;

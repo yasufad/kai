@@ -7,9 +7,9 @@
 
 ![Kai Screenshot](./docs/assets/gemini-screenshot.png)
 
-Kai is an open-source AI agent that brings the power of Gemini directly into
-your terminal. It provides lightweight access to Gemini, giving you the most
-direct path from your prompt to our model.
+Kai is an open-source AI agent that brings the power of Kai directly into your
+terminal. It provides lightweight access to GeminKaiing you the most direct path
+from your prompt to our model.
 
 Learn all about Kai in our [documentation](https://geminicli.com/docs/).
 
@@ -17,7 +17,7 @@ Learn all about Kai in our [documentation](https://geminicli.com/docs/).
 
 - **🎯 Free tier**: 60 requests/min and 1,000 requests/day with personal Google
   account.
-- **🧠 Powerful Gemini 2.5 Pro**: Access to 1M token context window.
+- **🧠 Powerful Kai 2.5 Pro**: Access to 1M token context window.
 - **🔧 Built-in tools**: Google Search grounding, file operations, shell
   commands, web fetching.
 - **🔌 Extensible**: MCP (Model Context Protocol) support for custom
@@ -131,7 +131,7 @@ Choose the authentication method that best fits your needs:
 
 ### Option 1: Login with Google (OAuth login using your Google Account)
 
-**✨ Best for:** Individual developers as well as anyone who has a Gemini Code
+**✨ Best for:** Individual developers as well as anyone who has a Kai Code
 Assist License. (see
 [quota limits and terms of service](https://cloud.google.com/gemini/docs/quotas)
 for details)
@@ -139,7 +139,7 @@ for details)
 **Benefits:**
 
 - **Free tier**: 60 requests/min and 1,000 requests/day
-- **Gemini 2.5 Pro** with 1M token context window
+- **Kai 2.5 Pro** with 1M token context window
 - **No API key management** - just sign in with your Google account
 - **Automatic updates** to latest models
 
@@ -157,14 +157,14 @@ export GOOGLE_CLOUD_PROJECT="YOUR_PROJECT_ID"
 gemini
 ```
 
-### Option 2: Gemini API Key
+### Option 2: Kai API Key
 
 **✨ Best for:** Developers who need specific model control or paid tier access
 
 **Benefits:**
 
-- **Free tier**: 100 requests/day with Gemini 2.5 Pro
-- **Model selection**: Choose specific Gemini models
+- **Free tier**: 100 requests/day with Kai 2.5 Pro
+- **Model selection**: Choose specific Kai models
 - **Usage-based billing**: Upgrade for higher limits when needed
 
 ```bash

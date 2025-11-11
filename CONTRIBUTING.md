@@ -311,8 +311,7 @@ npm run lint
 
 - Please adhere to the coding style, patterns, and conventions used throughout
   the existing codebase.
-- Consult
-  [GEMINI.md](https://github.com/google-gemini/gemini-cli/blob/main/GEMINI.md)
+- Consult [KAI.md](https://github.com/google-gemini/gemini-cli/blob/main/KAI.md)
   (typically found in the project root) for specific instructions related to
   AI-assisted development, including conventions for React, comments, and Git
   usage.

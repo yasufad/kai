@@ -126,25 +126,25 @@ Slash commands provide meta-level control over the CLI itself.
 
 - **`/memory`**
   - **Description:** Manage the AI's instructional context (hierarchical memory
-    loaded from `GEMINI.md` files).
+    loaded from `KAI.md` files).
   - **Sub-commands:**
     - **`add`**:
       - **Description:** Adds the following text to the AI's memory. Usage:
         `/memory add <text to remember>`
     - **`show`**:
       - **Description:** Display the full, concatenated content of the current
-        hierarchical memory that has been loaded from all `GEMINI.md` files.
-        This lets you inspect the instructional context being provided to the
-        Gemini model.
+        hierarchical memory that has been loaded from all `KAI.md` files. This
+        lets you inspect the instructional context being provided to the Gemini
+        model.
     - **`refresh`**:
       - **Description:** Reload the hierarchical instructional memory from all
-        `GEMINI.md` files found in the configured locations (global,
+        `KAI.md` files found in the configured locations (global,
         project/ancestors, and sub-directories). This command updates the model
-        with the latest `GEMINI.md` content.
+        with the latest `KAI.md` content.
     - **`list`**:
-      - **Description:** Lists the paths of the GEMINI.md files in use for
+      - **Description:** Lists the paths of the KAI.md files in use for
         hierarchical memory.
-    - **Note:** For more details on how `GEMINI.md` files contribute to
+    - **Note:** For more details on how `KAI.md` files contribute to
       hierarchical memory, see the
       [CLI Configuration documentation](../get-started/configuration.md).
 
@@ -227,10 +227,10 @@ Slash commands provide meta-level control over the CLI itself.
     footer
 
 - **`/init`**
-  - **Description:** To help users easily create a `GEMINI.md` file, this
-    command analyzes the current directory and generates a tailored context
-    file, making it simpler for them to provide project-specific instructions to
-    the Gemini agent.
+  - **Description:** To help users easily create a `KAI.md` file, this command
+    analyzes the current directory and generates a tailored context file, making
+    it simpler for them to provide project-specific instructions to the Gemini
+    agent.
 
 ### Custom Commands
 

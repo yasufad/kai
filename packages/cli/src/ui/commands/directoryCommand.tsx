@@ -99,7 +99,7 @@ export const directoryCommand: SlashCommand = {
           addItem(
             {
               type: MessageType.INFO,
-              text: `Successfully added GEMINI.md files from the following directories if there are:\n- ${added.join('\n- ')}`,
+              text: `Successfully added KAI.md files from the following directories if there are:\n- ${added.join('\n- ')}`,
             },
             Date.now(),
           );

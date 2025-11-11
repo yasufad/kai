@@ -109,7 +109,7 @@ npm install -g @google/gemini-cli@nightly
   [Google Search](https://ai.google.dev/gemini-api/docs/grounding) for real-time
   information
 - Conversation checkpointing to save and resume complex sessions
-- Custom context files (GEMINI.md) to tailor behavior for your projects
+- Custom context files (KAI.md) to tailor behavior for your projects
 
 ### GitHub Integration
 
@@ -275,7 +275,7 @@ gemini
   (`/help`, `/chat`, etc).
 - [**Custom Commands**](./docs/cli/custom-commands.md) - Create your own
   reusable commands.
-- [**Context Files (GEMINI.md)**](./docs/cli/gemini-md.md) - Provide persistent
+- [**Context Files (KAI.md)**](./docs/cli/gemini-md.md) - Provide persistent
   context to Gemini CLI.
 - [**Checkpointing**](./docs/cli/checkpointing.md) - Save and resume
   conversations.

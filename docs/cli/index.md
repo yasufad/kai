@@ -33,8 +33,8 @@ overview of Gemini CLI, see the [main documentation page](../index.md).
   which projects can use the full capabilities of the CLI.
 - **[Ignoring Files (.geminiignore)](./gemini-ignore.md):** Exclude specific
   files and directories from being accessed by tools.
-- **[Context Files (GEMINI.md)](./gemini-md.md):** Provide persistent,
-  hierarchical context to the model.
+- **[Context Files (KAI.md)](./gemini-md.md):** Provide persistent, hierarchical
+  context to the model.
 
 ## Non-interactive mode
 

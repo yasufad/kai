@@ -206,7 +206,7 @@ describe('memoryCommand', () => {
       const refreshResult: LoadServerHierarchicalMemoryResponse = {
         memoryContent: 'new memory content',
         fileCount: 2,
-        filePaths: ['/path/one/GEMINI.md', '/path/two/GEMINI.md'],
+        filePaths: ['/path/one/KAI.md', '/path/two/KAI.md'],
       };
       mockRefreshServerHierarchicalMemory.mockResolvedValue(refreshResult);
 
@@ -313,7 +313,7 @@ describe('memoryCommand', () => {
       });
     });
 
-    it('should display a message if no GEMINI.md files are found', async () => {
+    it('should display a message if no KAI.md files are found', async () => {
       if (!listCommand.action) throw new Error('Command has no action');
 
       mockGetGeminiMdfilePaths.mockReturnValue([]);
@@ -323,7 +323,7 @@ describe('memoryCommand', () => {
       expect(mockContext.ui.addItem).toHaveBeenCalledWith(
         {
           type: MessageType.INFO,
-          text: 'No GEMINI.md files in use.',
+          text: 'No KAI.md files in use.',
         },
         expect.any(Number),
       );
@@ -332,7 +332,7 @@ describe('memoryCommand', () => {
     it('should display the file count and paths if they exist', async () => {
       if (!listCommand.action) throw new Error('Command has no action');
 
-      const filePaths = ['/path/one/GEMINI.md', '/path/two/GEMINI.md'];
+      const filePaths = ['/path/one/KAI.md', '/path/two/KAI.md'];
       mockGetGeminiMdfilePaths.mockReturnValue(filePaths);
 
       await listCommand.action(mockContext, '');
@@ -340,7 +340,7 @@ describe('memoryCommand', () => {
       expect(mockContext.ui.addItem).toHaveBeenCalledWith(
         {
           type: MessageType.INFO,
-          text: `There are 2 GEMINI.md file(s) in use:\n\n${filePaths.join('\n')}`,
+          text: `There are 2 KAI.md file(s) in use:\n\n${filePaths.join('\n')}`,
         },
         expect.any(Number),
       );

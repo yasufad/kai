@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { Box, Text, useIsScreenReaderEnabled } from 'ink';
+import { Box, Text } from 'ink';
 import { LoadingIndicator } from './LoadingIndicator.js';
 import { ContextSummaryDisplay } from './ContextSummaryDisplay.js';
 import { AutoAcceptIndicator } from './AutoAcceptIndicator.js';
@@ -12,7 +12,6 @@ import { ShellModeIndicator } from './ShellModeIndicator.js';
 import { DetailedMessagesDisplay } from './DetailedMessagesDisplay.js';
 import { RawMarkdownIndicator } from './RawMarkdownIndicator.js';
 import { InputPrompt } from './InputPrompt.js';
-import { Footer } from './Footer.js';
 import { ShowMoreLines } from './ShowMoreLines.js';
 import { QueuedMessageDisplay } from './QueuedMessageDisplay.js';
 import { OverflowProvider } from '../contexts/OverflowContext.js';
@@ -31,7 +30,7 @@ import { TodoTray } from './messages/Todo.js';
 export const Composer = () => {
   const config = useConfig();
   const settings = useSettings();
-  const isScreenReaderEnabled = useIsScreenReaderEnabled();
+  //const isScreenReaderEnabled = useIsScreenReaderEnabled();
   const uiState = useUIState();
   const uiActions = useUIActions();
   const { vimEnabled } = useVimMode();
@@ -164,7 +163,7 @@ export const Composer = () => {
         />
       )}
 
-      {!settings.merged.ui?.hideFooter && !isScreenReaderEnabled && <Footer />}
+      {/**{!settings.merged.ui?.hideFooter && !isScreenReaderEnabled && <Footer />}**/}
     </Box>
   );
 };

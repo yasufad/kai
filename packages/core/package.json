@@ -1,10 +1,10 @@
 {
-  "name": "@google/gemini-cli-core",
+  "name": "@yasufad/kai-core",
   "version": "0.15.0-nightly.20251111.51f952e7",
   "description": "Gemini CLI Core",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/google-gemini/gemini-cli.git"
+    "url": "git+https://github.com/google-gemini/kai.git"
   },
   "type": "module",
   "main": "dist/index.js",
@@ -79,7 +79,7 @@
     "node-pty": "^1.0.0"
   },
   "devDependencies": {
-    "@google/gemini-cli-test-utils": "file:../test-utils",
+    "@yasufad/kai-test-utils": "file:../test-utils",
     "@types/diff": "^7.0.2",
     "@types/dotenv": "^6.1.1",
     "@types/fast-levenshtein": "^0.0.4",

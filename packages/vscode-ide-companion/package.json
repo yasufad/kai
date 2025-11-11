@@ -1,5 +1,5 @@
 {
-  "name": "gemini-cli-vscode-ide-companion",
+  "name": "kai-vscode-ide-companion",
   "displayName": "Gemini CLI Companion",
   "description": "Enable Gemini CLI with direct access to your IDE workspace.",
   "version": "0.15.0-nightly.20251111.51f952e7",
@@ -7,7 +7,7 @@
   "icon": "assets/icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/google-gemini/gemini-cli.git",
+    "url": "https://github.com/google-gemini/kai.git",
     "directory": "packages/vscode-ide-companion"
   },
   "engines": {
@@ -19,7 +19,7 @@
     "AI"
   ],
   "keywords": [
-    "gemini-cli",
+    "kai",
     "gemini cli",
     "gemini",
     "gemini code",
@@ -34,7 +34,7 @@
     "configuration": {
       "title": "Gemini CLI",
       "properties": {
-        "gemini-cli.debug.logging.enabled": {
+        "kai.debug.logging.enabled": {
           "type": "boolean",
           "default": false,
           "description": "Enable detailed logging for debugging the Gemini CLI Companion."
@@ -58,11 +58,11 @@
         "icon": "$(close)"
       },
       {
-        "command": "gemini-cli.runGeminiCLI",
+        "command": "kai.runGeminiCLI",
         "title": "Gemini CLI: Run"
       },
       {
-        "command": "gemini-cli.showNotices",
+        "command": "kai.showNotices",
         "title": "Gemini CLI: View Third-Party Notices"
       }
     ],

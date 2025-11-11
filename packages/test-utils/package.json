@@ -1,5 +1,5 @@
 {
-  "name": "@google/gemini-cli-test-utils",
+  "name": "@yasufad/kai-test-utils",
   "version": "0.15.0-nightly.20251111.51f952e7",
   "private": true,
   "main": "src/index.ts",

@@ -1,13 +1,13 @@
 {
   "name": "kai-vscode-ide-companion",
-  "displayName": "Gemini CLI Companion",
-  "description": "Enable Gemini CLI with direct access to your IDE workspace.",
+  "displayName": "Kai Companion",
+  "description": "Enable Kai with direct access to your IDE workspace.",
   "version": "0.15.0-nightly.20251111.51f952e7",
   "publisher": "google",
   "icon": "assets/icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/google-gemini/kai.git",
+    "url": "https://github.com/yasufad/kai.git",
     "directory": "packages/vscode-ide-companion"
   },
   "engines": {
@@ -32,12 +32,12 @@
   ],
   "contributes": {
     "configuration": {
-      "title": "Gemini CLI",
+      "title": "Kai",
       "properties": {
         "kai.debug.logging.enabled": {
           "type": "boolean",
           "default": false,
-          "description": "Enable detailed logging for debugging the Gemini CLI Companion."
+          "description": "Enable detailed logging for debugging the Kai Companion."
         }
       }
     },
@@ -49,21 +49,21 @@
     "commands": [
       {
         "command": "gemini.diff.accept",
-        "title": "Gemini CLI: Accept Diff",
+        "title": "Kai: Accept Diff",
         "icon": "$(check)"
       },
       {
         "command": "gemini.diff.cancel",
-        "title": "Gemini CLI: Close Diff Editor",
+        "title": "Kai: Close Diff Editor",
         "icon": "$(close)"
       },
       {
         "command": "kai.runGeminiCLI",
-        "title": "Gemini CLI: Run"
+        "title": "Kai: Run"
       },
       {
         "command": "kai.showNotices",
-        "title": "Gemini CLI: View Third-Party Notices"
+        "title": "Kai: View Third-Party Notices"
       }
     ],
     "menus": {

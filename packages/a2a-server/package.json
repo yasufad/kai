@@ -1,10 +1,10 @@
 {
   "name": "@yasufad/kai-a2a-server",
   "version": "0.15.0-nightly.20251111.51f952e7",
-  "description": "Gemini CLI A2A Server",
+  "description": "Kai A2A Server",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/google-gemini/kai.git",
+    "url": "git+https://github.com/yasufad/kai.git",
     "directory": "packages/a2a-server"
   },
   "type": "module",

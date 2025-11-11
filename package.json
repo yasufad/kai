@@ -11,7 +11,7 @@
   "private": "true",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/google-gemini/kai.git"
+    "url": "git+https://github.com/yasufad/kai.git"
   },
   "config": {
     "sandboxImageUri": "us-docker.pkg.dev/gemini-code-dev/kai/sandbox:0.15.0-nightly.20251111.51f952e7"
